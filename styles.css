@@ -1,25 +1,27 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #fff0f5; 
+    color: #444;
 }
 
 header {
-    background-color: #2c3e50;
+    background-color: #d16ba5;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 header h1 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 18px;
+    margin-top: 0;
 }
 
 section {
@@ -28,11 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #2c3e50;
+    color: #b83b5e;
+    border-bottom: 2px solid #f8a5c2;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #d16ba5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 footer a {
-    color: #3498db;
+    color: #f8c291;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -43,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #ecf0f1;
+    background-color: #ffe6f0;
     border-radius: 8px;
     padding: 30px;
 }
@@ -61,6 +73,7 @@ footer a:hover {
 
 .skill h3 {
     font-size: 20px;
+    color: #6a0572;
     margin-bottom: 10px;
 }
 
@@ -68,24 +81,28 @@ footer a:hover {
     height: 20px;
     width: 100%;
     border-radius: 5px;
+    background-color: #f0f0f0;
+    overflow: hidden;
 }
 
+/* Skill Bars */
 .sql {
-    background-color: #3498db;
-    width: 80%; /* Adjust percentage based on skill level */
+    background-color: #ff6f91;
+    width: 80%;
 }
 
 .python {
-    background-color: #e74c3c;
-    width: 85%; /* Adjust percentage based on skill level */
+    background-color: #845ec2;
+    width: 85%;
 }
 
 .excel {
-    background-color: #2ecc71;
-    width: 90%; /* Adjust percentage based on skill level */
+    background-color: #ffc75f;
+    width: 90%;
 }
 
 .visualization {
-    background-color: #f39c12;
-    width: 75%; /* Adjust percentage based on skill level */
+    background-color: #f9f871;
+    width: 75%;
 }
+
