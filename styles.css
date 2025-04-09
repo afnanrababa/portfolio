@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff5e6; /* peachy background */
-    color: #333333;
+    background-color: #CCD2D2; /* Light grey background */
+    color: #1D2D25; /* Dark greenish text */
 }
 
 header {
-    background-color: #ff8c69; /* coral/peach */
+    background-color: #91524B; /* Warm brown background */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,21 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #e67300; /* warm orange */
-    border-bottom: 2px solid #ffb385;
+    color: #BA7D66; /* Soft brown color */
+    border-bottom: 2px solid #91524B; /* Darker brown border */
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #ff8c69;
+    background-color: #91524B; /* Warm brown background */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #ffe0cc;
+    color: #ffe0cc; /* Soft light color for footer links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -55,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #fff0e0;
+    background-color: #BA7D66; /* Soft brown background */
     border-radius: 8px;
     padding: 30px;
 }
@@ -73,7 +73,7 @@ footer a:hover {
 
 .skill h3 {
     font-size: 20px;
-    color: #d35400;
+    color: #1D2D25; /* Dark greenish text */
     margin-bottom: 10px;
 }
 
@@ -81,30 +81,31 @@ footer a:hover {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #ffe5d0;
+    background-color: #CCD2D2; /* Light grey background for bars */
     overflow: hidden;
 }
 
 /* Skill Bars */
 .sql {
-    background-color: #ffad99;
+    background-color: #91524B; /* Warm brown */
     width: 80%;
 }
 
 .python {
-    background-color: #ffa07a;
+    background-color: #BA7D66; /* Soft brown */
     width: 85%;
 }
 
 .excel {
-    background-color: #ffcba4;
+    background-color: #1D2D25; /* Dark green */
     width: 90%;
 }
 
 .visualization {
-    background-color: #ffd1b3;
+    background-color: #CCD2D2; /* Light grey */
     width: 75%;
 }
+
 /* About Section Animation */
 .fade-in {
     opacity: 0;
@@ -122,7 +123,7 @@ footer a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #ff8c69; /* peachy */
+    background-color: #91524B; /* Warm brown background */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -131,6 +132,6 @@ footer a:hover {
 }
 
 .cta-button:hover {
-    background-color: #e67350;
+    background-color: #BA7D66; /* Soft brown hover effect */
 }
 
