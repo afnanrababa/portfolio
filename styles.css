@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ECF0F1; /* Very light gray background */
-    color: #7F8C8D; /* Light gray text */
+    background-color: #FAF9F6; /* Very light neutral background */
+    color: #333333; /* Dark text for contrast */
 }
 
 header {
-    background-color: #F1C40F; /* Light golden yellow */
+    background-color: #FF9E7B; /* Light Coral/Peach */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,21 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #FF6F61; /* Soft coral for section headings */
-    border-bottom: 2px solid #3498DB; /* Light blue border */
+    color: #FECC6A; /* Light Yellow for headings */
+    border-bottom: 2px solid #6B9A6E; /* Light Green for border */
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #F1C40F; /* Light golden yellow */
+    background-color: #FF9E7B; /* Light Coral/Peach */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #3498DB; /* Light blue links */
+    color: #6B9A6E; /* Light Green links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -55,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #FF6F61; /* Soft coral background for skills section */
+    background-color: #FECC6A; /* Light Yellow for skills section */
     border-radius: 8px;
     padding: 30px;
 }
@@ -81,28 +81,28 @@ footer a:hover {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #ECF0F1; /* Light gray for the skill bars */
+    background-color: #FAF9F6; /* Very light background for skill bars */
     overflow: hidden;
 }
 
 /* Skill Bars */
 .sql {
-    background-color: #3498DB; /* Light blue for SQL skill */
+    background-color: #EB6548; /* Light Orange for SQL skill */
     width: 80%;
 }
 
 .python {
-    background-color: #F1C40F; /* Light golden yellow for Python skill */
+    background-color: #6B9A6E; /* Light Green for Python skill */
     width: 85%;
 }
 
 .excel {
-    background-color: #FF6F61; /* Soft coral for Excel skill */
+    background-color: #FF9E7B; /* Light Coral for Excel skill */
     width: 90%;
 }
 
 .visualization {
-    background-color: #7F8C8D; /* Light gray for Visualization skill */
+    background-color: #FECC6A; /* Light Yellow for Visualization skill */
     width: 75%;
 }
 
@@ -111,7 +111,7 @@ footer a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #3498DB; /* Light blue button */
+    background-color: #6B9A6E; /* Light Green for CTA button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -120,7 +120,7 @@ footer a:hover {
 }
 
 .cta-button:hover {
-    background-color: #FF6F61; /* Soft coral on hover */
+    background-color: #FF9E7B; /* Light Coral on hover */
 }
 
 
