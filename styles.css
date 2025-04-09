@@ -1,164 +1,254 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* white background */
-    color: #333333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+            color: #333333;
+        }
 
-/* Header Section */
-header {
-    background-color: #589d62; /* Green */
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-}
+        header {
+            background-color: #589d62; /* Light Green */
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+        }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
 
-header p {
-    font-size: 18px;
-    margin-top: 0;
-}
+        header p {
+            font-size: 18px;
+            margin-top: 0;
+        }
 
-/* About Section */
-#about {
-    background-color: #f9f9f9; /* light grey */
-    padding: 50px 10%;
-    color: #2E2E2E;
-}
+        section {
+            padding: 40px 10%;
+        }
 
-#about h2 {
-    font-size: 28px;
-    color: #589d62; /* Green */
-    border-bottom: 2px solid #c2dbc9; /* light green border */
-    padding-bottom: 8px;
-    margin-bottom: 30px;
-}
+        h2 {
+            font-size: 28px;
+            color: #589d62; /* Light Green */
+            border-bottom: 2px solid #fbb0bb; /* Light Pink */
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
 
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+        footer {
+            background-color: #589d62; /* Light Green */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-/* Skills Section */
-#skills {
-    background-color: #f1f8f6; /* very light green/white */
-    padding: 50px 10%;
-}
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
 
-#skills h2 {
-    font-size: 28px;
-    color: #289672; /* Blue-green */
-    text-align: center;
-    margin-bottom: 30px;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-/* Skill List Styling */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+        /* Skills Section */
+        #skills {
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            padding: 30px;
+        }
 
-.skill {
-    width: 45%;
-    margin-bottom: 20px;
-}
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-.skill h3 {
-    font-size: 20px;
-    color: #289672; /* Blue-green */
-    margin-bottom: 10px;
-}
+        .skill {
+            width: 45%;
+            margin-bottom: 20px;
+        }
 
-.skill-bar {
-    height: 20px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: #e0f1e5;
-    overflow: hidden;
-}
+        .skill h3 {
+            font-size: 20px;
+            color: #589d62; /* Light Green */
+            margin-bottom: 10px;
+        }
 
-.sql {
-    background-color: #ffad99;
-    width: 80%;
-}
+        .skill-bar {
+            height: 20px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
 
-.python {
-    background-color: #ffa07a;
-    width: 85%;
-}
+        /* Skill Bars */
+        .sql {
+            background-color: #ffad99;
+            width: 80%;
+        }
 
-.excel {
-    background-color: #ffcba4;
-    width: 90%;
-}
+        .python {
+            background-color: #ffa07a;
+            width: 85%;
+        }
 
-.visualization {
-    background-color: #ffd1b3;
-    width: 75%;
-}
+        .excel {
+            background-color: #ffcba4;
+            width: 90%;
+        }
 
-/* Certificates Section */
-#certificates {
-    background-color: #f1f8f6; /* very light green/white */
-    padding: 50px 10%;
-}
+        .visualization {
+            background-color: #ffd1b3;
+            width: 75%;
+        }
 
-#certificates h2 {
-    font-size: 28px;
-    color: #289672; /* Blue-green */
-    text-align: center;
-    margin-bottom: 30px;
-}
+        /* About Section */
+        #about {
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+        }
 
-/* Certificate List Styling */
-.certificate {
-    margin-bottom: 20px;
-}
+        /* Slide Show for Certificates */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
 
-.certificate h3 {
-    font-size: 22px;
-    color: #289672; /* Blue-green */
-    margin-bottom: 10px;
-}
+        .mySlides {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+        }
 
-.certificate a {
-    color: #1d7c58; /* Darker Blue-green */
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1px solid #289672;
-    transition: background-color 0.3s ease;
-}
+        .slideshow-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-.certificate a:hover {
-    background-color: #289672;
-    color: white;
-}
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s ease;
+            user-select: none;
+        }
 
-/* Footer Section */
-footer {
-    background-color: #589d62; /* Green */
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-}
+        .prev {
+            left: 0;
+        }
 
-footer a {
-    color: #e5f1e8;
-    text-decoration: none;
-    margin: 0 10px;
-}
+        .next {
+            right: 0;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
 
-}
+        /* Links Section */
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .links a {
+            color: #589d62; /* Light Green */
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am a passionate Data Analyst</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I've worked closely with data where accuracy meant everything.</p>
+        <p>That’s where my passion for data analysis began — not just gathering information, but understanding it. Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
+        <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
+    </section>
+
+    <!-- Certificates Section (Slide Show) -->
+    <section id="certificates">
+        <h2>My Certificates</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="certificate1.jpg" alt="Certificate 1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="certificate2.jpg" alt="Certificate 2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="certificate3.jpg" alt="Certificate 3">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links">
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        <a href="https://www.tableau.com/your-tableau-link" target="_blank">Tableau</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact me at: example@example.com</p>
+    </footer>
+
+    <script>
+        // Slideshow JavaScript
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        showSlides();
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    </script>
+</body>
+</html>
+
