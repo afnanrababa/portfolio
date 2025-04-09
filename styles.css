@@ -1,16 +1,18 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #2E2E2E;
+    background-color: #ffffff; /* white background */
+    color: #333333;
 }
 
+/* Header Section */
 header {
-    background-color: #FFDACC;
-    color: #2E2E2E;
+    background-color: #589d62; /* Green */
+    color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 header h1 {
@@ -23,28 +25,54 @@ header p {
     margin-top: 0;
 }
 
-section {
-    padding: 40px 10%;
-    background-color: #FFF5F0;
+/* About Section */
+#about {
+    background-color: #f9f9f9; /* light grey */
+    padding: 50px 10%;
+    color: #2E2E2E;
 }
 
-h2 {
+#about h2 {
     font-size: 28px;
-    color: #D1766A;
-    border-bottom: 2px solid #FFDACC;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    color: #589d62; /* Green */
+    border-bottom: 2px solid #c2dbc9; /* light green border */
+    padding-bottom: 8px;
+    margin-bottom: 30px;
 }
 
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills Section */
 #skills {
-    background-color: #FFEDE6;
-    border-radius: 8px;
-    padding: 30px;
+    background-color: #f1f8f6; /* very light green/white */
+    padding: 50px 10%;
+}
+
+#skills h2 {
+    font-size: 28px;
+    color: #289672; /* Blue-green */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Skill List Styling */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
 }
 
 .skill h3 {
     font-size: 20px;
-    color: #D1766A;
+    color: #289672; /* Blue-green */
     margin-bottom: 10px;
 }
 
@@ -52,51 +80,85 @@ h2 {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #e0f1e5;
     overflow: hidden;
 }
 
-.sql,
-.python,
-.excel,
-.visualization {
-    background-color: #FFDACC;
+.sql {
+    background-color: #ffad99;
+    width: 80%;
 }
 
-.sql { width: 80%; }
-.python { width: 85%; }
-.excel { width: 90%; }
-.visualization { width: 75%; }
+.python {
+    background-color: #ffa07a;
+    width: 85%;
+}
 
-footer {
-    background-color: #FFDACC;
-    color: #2E2E2E;
+.excel {
+    background-color: #ffcba4;
+    width: 90%;
+}
+
+.visualization {
+    background-color: #ffd1b3;
+    width: 75%;
+}
+
+/* Certificates Section */
+#certificates {
+    background-color: #f1f8f6; /* very light green/white */
+    padding: 50px 10%;
+}
+
+#certificates h2 {
+    font-size: 28px;
+    color: #289672; /* Blue-green */
     text-align: center;
-    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* Certificate List Styling */
+.certificate {
+    margin-bottom: 20px;
+}
+
+.certificate h3 {
+    font-size: 22px;
+    color: #289672; /* Blue-green */
+    margin-bottom: 10px;
+}
+
+.certificate a {
+    color: #1d7c58; /* Darker Blue-green */
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #289672;
+    transition: background-color 0.3s ease;
+}
+
+.certificate a:hover {
+    background-color: #289672;
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: #589d62; /* Green */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
 }
 
 footer a {
-    color: #2E2E2E;
+    color: #e5f1e8;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #D1766A;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #FFDACC;
-    color: #2E2E2E;
 }
