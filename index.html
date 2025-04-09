@@ -1,156 +1,104 @@
-/* ====== Base Style ====== */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #2E2E2E;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
 
-/* ====== Header ====== */
-header {
-    background-color: #589d62;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-}
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+    <!-- Swiper CSS (for certificates slider) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
 
-header p {
-    font-size: 18px;
-    margin-top: 0;
-}
+    <!-- Header -->
+    <header>
+        <h1>Afnan Rababa</h1>
+        <p>Passionate Data Analyst | Problem Solver</p>
+    </header>
 
-/* ====== Section Layout ====== */
-section {
-    padding: 50px 10%;
-    background-color: #f9f9f9;
-}
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a data analyst with 6+ years of experience in data collection, organization, and visualization. I’m passionate about transforming raw data into meaningful insights using tools like Excel, SQL, and Python. I am continuously enhancing my skills and focusing now on deeper data analytics to support decision-making and impact.</p>
+    </section>
 
-h2 {
-    font-size: 28px;
-    color: #589d62;
-    border-bottom: 2px solid #c2dbc9;
-    padding-bottom: 8px;
-    margin-bottom: 30px;
-}
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="skill-bar sql"></div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar python"></div>
+            </div>
+            <div class="skill">
+                <h3>Excel</h3>
+                <div class="skill-bar excel"></div>
+            </div>
+            <div class="skill">
+                <h3>Data Visualization</h3>
+                <div class="skill-bar visualization"></div>
+            </div>
+        </div>
+    </section>
 
-/* ====== Skills Section ====== */
-#skills {
-    background-color: #f0f6f2;
-    border-radius: 8px;
-    padding: 30px;
-}
+    <!-- Certificates -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Certificate 1 -->
+                <div class="swiper-slide">
+                    <img src="images/google-data-analytics.png" alt="Google Data Analytics">
+                    <p>Google Data Analytics</p>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="swiper-slide">
+                    <img src="images/coursera-excel.png" alt="Coursera Excel">
+                    <p>Excel for Data Analysis (Coursera)</p>
+                </div>
+                <!-- Add more certificates here -->
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    <!-- Footer -->
+    <footer>
+        <p>Contact: afnan@example.com | Jordan</p>
+        <p>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> |
+            <a href="https://public.tableau.com/app/profile/your-tableau" target="_blank">Tableau</a>
+        </p>
+    </footer>
 
-.skill {
-    width: 45%;
-    margin-bottom: 25px;
-}
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-.skill h3 {
-    font-size: 20px;
-    color: #3d7b4f;
-    margin-bottom: 10px;
-}
-
-.skill-bar {
-    height: 20px;
-    width: 100%;
-    background-color: #e6eee8;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-/* ==== Progress Bars ==== */
-.sql, .python, .excel, .visualization {
-    background-color: #589d62;
-}
-
-.sql { width: 80%; }
-.python { width: 85%; }
-.excel { width: 90%; }
-.visualization { width: 75%; }
-
-/* ====== Certificates Section ====== */
-#certificates {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 50px 10%;
-}
-
-.swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.swiper-slide img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.swiper-slide p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #3d7b4f;
-}
-
-/* Swiper Navigation */
-.swiper-button-next,
-.swiper-button-prev {
-    color: #589d62;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #589d62;
-}
-
-/* ====== Footer ====== */
-footer {
-    background-color: #589d62;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-}
-
-footer a {
-    color: #e5f1e8;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* ====== Button Style (optional) ====== */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #589d62;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #3d7b4f;
-}
+    <!-- Swiper init -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
 
 
