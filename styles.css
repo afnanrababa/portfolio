@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #CCD2D2; /* Light grey background */
-    color: #1D2D25; /* Dark greenish text */
+    background-color: #ECF0F1; /* Light grey background */
+    color: #2C3E50; /* Dark blue-grey text */
 }
 
 header {
-    background-color: #91524B; /* Warm brown background */
+    background-color: #2C3E50; /* Dark blue-grey */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,21 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #BA7D66; /* Soft brown color */
-    border-bottom: 2px solid #91524B; /* Darker brown border */
+    color: #E74C3C; /* Red for heading */
+    border-bottom: 2px solid #3498DB; /* Blue border */
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #91524B; /* Warm brown background */
+    background-color: #2C3E50; /* Dark blue-grey */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #ffe0cc; /* Soft light color for footer links */
+    color: #3498DB; /* Blue links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -55,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #BA7D66; /* Soft brown background */
+    background-color: #F39C12; /* Warm orange background */
     border-radius: 8px;
     padding: 30px;
 }
@@ -73,7 +73,7 @@ footer a:hover {
 
 .skill h3 {
     font-size: 20px;
-    color: #1D2D25; /* Dark greenish text */
+    color: #2C3E50; /* Dark blue-grey text */
     margin-bottom: 10px;
 }
 
@@ -81,41 +81,29 @@ footer a:hover {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #CCD2D2; /* Light grey background for bars */
+    background-color: #ECF0F1; /* Light grey for the skill bars */
     overflow: hidden;
 }
 
 /* Skill Bars */
 .sql {
-    background-color: #91524B; /* Warm brown */
+    background-color: #E74C3C; /* Red for SQL skill */
     width: 80%;
 }
 
 .python {
-    background-color: #BA7D66; /* Soft brown */
+    background-color: #3498DB; /* Blue for Python skill */
     width: 85%;
 }
 
 .excel {
-    background-color: #1D2D25; /* Dark green */
+    background-color: #F39C12; /* Orange for Excel skill */
     width: 90%;
 }
 
 .visualization {
-    background-color: #CCD2D2; /* Light grey */
+    background-color: #2C3E50; /* Dark blue-grey for Visualization skill */
     width: 75%;
-}
-
-/* About Section Animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Call to Action Button */
@@ -123,7 +111,7 @@ footer a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #91524B; /* Warm brown background */
+    background-color: #E74C3C; /* Red button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -132,6 +120,7 @@ footer a:hover {
 }
 
 .cta-button:hover {
-    background-color: #BA7D66; /* Soft brown hover effect */
+    background-color: #2C3E50; /* Dark blue-grey on hover */
 }
+
 
