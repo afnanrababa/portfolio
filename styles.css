@@ -1,14 +1,13 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1; /* Light neutral background */
-    color: #333333; /* Dark text for contrast */
+    background-color: #ffffff; /* خلفية الموقع */
+    color: #2E2E2E; /* لون النص */
 }
 
 header {
-    background-color: #6B9A6E; /* Main green color for header */
+    background-color: #FF9E7B; /* خوخي */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -26,102 +25,83 @@ header p {
 
 section {
     padding: 40px 10%;
+    background-color: #ffffff; /* أقسام ببياض مريح */
 }
 
 h2 {
     font-size: 28px;
-    color: #A1C6A1; /* Lighter green for headings */
-    border-bottom: 2px solid #6B9A6E; /* Darker green border */
+    color: #FF9E7B;
+    border-bottom: 2px solid #FFD6C1;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #6B9A6E; /* Main green color for footer */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #A1C6A1; /* Lighter green for links */
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Skills Section */
 #skills {
-    background-color: #A1C6A1; /* Lighter green for skills section */
+    background-color: #FFD6C1; /* خلفية ناعمة */
     border-radius: 8px;
     padding: 30px;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skill {
-    width: 45%;
-    margin-bottom: 20px;
-}
-
 .skill h3 {
     font-size: 20px;
-    color: #6B9A6E; /* Darker green for skill titles */
-    margin-bottom: 10px;
+    color: #3C3C3C;
 }
 
 .skill-bar {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #f9f9f9; /* Very light gray background for skill bars */
+    background-color: #fff;
     overflow: hidden;
 }
 
-/* Skill Bars */
 .sql {
-    background-color: #6B9A6E; /* Darker green for SQL skill */
+    background-color: #FF9E7B;
     width: 80%;
 }
 
 .python {
-    background-color: #A1C6A1; /* Lighter green for Python skill */
+    background-color: #FF9E7B;
     width: 85%;
 }
 
 .excel {
-    background-color: #6B9A6E; /* Darker green for Excel skill */
+    background-color: #FF9E7B;
     width: 90%;
 }
 
 .visualization {
-    background-color: #A1C6A1; /* Lighter green for visualization skill */
+    background-color: #FF9E7B;
     width: 75%;
 }
 
-/* Call to Action Button */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #6B9A6E; /* Main green color for CTA button */
+footer {
+    background-color: #FF9E7B;
     color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    background-color: #FF9E7B;
+    color: white;
+    padding: 12px 25px;
     border-radius: 5px;
-    font-weight: bold;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #A1C6A1; /* Lighter green on hover */
+    background-color: #FFD6C1;
+    color: #333;
 }
-
-
 
