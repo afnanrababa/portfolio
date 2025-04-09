@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Afnan Rababa</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* General Styles */
@@ -11,12 +11,12 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* White background */
+            background-color: #ffffff;
             color: #333333;
         }
 
         header {
-            background-color: #589d62; /* Light Green */
+            background-color: #589d62;
             color: white;
             text-align: center;
             padding: 25px 0;
@@ -38,21 +38,21 @@
 
         h2 {
             font-size: 28px;
-            color: #589d62; /* Light Green */
-            border-bottom: 2px solid #fbb0bb; /* Light Pink */
+            color: #589d62;
+            border-bottom: 2px solid #fbb0bb;
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
 
         footer {
-            background-color: #589d62; /* Light Green */
+            background-color: #589d62;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
 
         footer a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 10px;
         }
@@ -81,7 +81,7 @@
 
         .skill h3 {
             font-size: 20px;
-            color: #589d62; /* Light Green */
+            color: #589d62;
             margin-bottom: 10px;
         }
 
@@ -89,38 +89,22 @@
             height: 20px;
             width: 100%;
             border-radius: 5px;
-            background-color: #f0f0f0;
+            background-color: #e8e8e8;
         }
 
         /* Skill Bars */
-        .sql {
-            background-color: #ffad99;
-            width: 80%;
-        }
-
-        .python {
-            background-color: #ffa07a;
-            width: 85%;
-        }
-
-        .excel {
-            background-color: #ffcba4;
-            width: 90%;
-        }
-
-        .visualization {
-            background-color: #ffd1b3;
-            width: 75%;
-        }
+        .sql { background-color: #aed8c0; width: 80%; }
+        .python { background-color: #9dd3ae; width: 85%; }
+        .excel { background-color: #8bc69c; width: 90%; }
+        .visualization { background-color: #78b989; width: 75%; }
 
         /* About Section */
         #about {
             background-color: #ffffff;
             color: #333;
-            padding: 20px;
         }
 
-        /* Slide Show for Certificates */
+        /* Certificates Slider */
         .slideshow-container {
             max-width: 100%;
             position: relative;
@@ -129,13 +113,13 @@
 
         .mySlides {
             display: none;
-            width: 100%;
-            border-radius: 10px;
         }
 
         .slideshow-container img {
             width: 100%;
             border-radius: 10px;
+            max-height: 500px;
+            object-fit: contain;
         }
 
         .prev, .next {
@@ -150,14 +134,8 @@
             user-select: none;
         }
 
-        .prev {
-            left: 0;
-        }
-
-        .next {
-            right: 0;
-        }
-
+        .prev { left: 0; }
+        .next { right: 0; }
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 0.5);
         }
@@ -165,11 +143,11 @@
         /* Links Section */
         .links {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .links a {
-            color: #589d62; /* Light Green */
+            color: #589d62;
             text-decoration: none;
             font-size: 18px;
             margin: 0 15px;
@@ -181,13 +159,13 @@
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <h1>Welcome to My Portfolio</h1>
         <p>Passionate Data Analyst | Problem Solver</p>
     </header>
 
-    <!-- About Section -->
+    <!-- About Me -->
     <section id="about">
         <h2>About Me</h2>
         <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I've worked closely with data where accuracy meant everything.</p>
@@ -195,63 +173,83 @@
         <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
     </section>
 
-    <!-- Certificates Section (Slide Show) -->
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="skill-bar sql"></div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar python"></div>
+            </div>
+            <div class="skill">
+                <h3>Excel</h3>
+                <div class="skill-bar excel"></div>
+            </div>
+            <div class="skill">
+                <h3>Data Visualization</h3>
+                <div class="skill-bar visualization"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
     <section id="certificates">
         <h2>My Certificates</h2>
         <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="certificate1.jpg" alt="Certificate 1">
-            </div>
+            <div class="mySlides"><img src="images/certificate1.jpg" alt="Certificate 1"></div>
+            <div class="mySlides"><img src="images/certificate2.jpg" alt="Certificate 2"></div>
+            <div class="mySlides"><img src="images/certificate3.jpg" alt="Certificate 3"></div>
+            <div class="mySlides"><img src="images/certificate4.jpg" alt="Certificate 4"></div>
+            <div class="mySlides"><img src="images/certificate5.jpg" alt="Certificate 5"></div>
+            <div class="mySlides"><img src="images/certificate6.jpg" alt="Certificate 6"></div>
+            <div class="mySlides"><img src="images/certificate7.jpg" alt="Certificate 7"></div>
 
-            <div class="mySlides fade">
-                <img src="certificate2.jpg" alt="Certificate 2">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="certificate3.jpg" alt="Certificate 3">
-            </div>
-
-            <!-- Navigation Arrows -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </section>
 
-    <!-- Links Section -->
+    <!-- Links -->
     <section class="links">
         <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
         <a href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau</a>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>Contact me at: afnanraabah1@gmail.com</p>
         <p><strong>Location:</strong> Jordan</p>
-
     </footer>
 
+    <!-- JavaScript for Slider -->
     <script>
-        // Slideshow JavaScript
-        let slideIndex = 0;
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-
-        showSlides();
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        setInterval(() => {
+            plusSlides(1);
+        }, 4000); // Every 4 seconds
     </script>
 </body>
 </html>
+
 
 
