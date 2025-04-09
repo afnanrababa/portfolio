@@ -2,15 +2,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* خلفية الموقع */
-    color: #2E2E2E; /* لون النص */
+    background-color: #ffffff;
+    color: #2E2E2E;
 }
 
 header {
-    background-color: #FF9E7B; /* خوخي */
-    color: white;
+    background-color: #BFD8BD;
+    color: #2E2E2E;
     text-align: center;
-    padding: 25px 0;
+    padding: 30px 0;
 }
 
 header h1 {
@@ -25,65 +25,77 @@ header p {
 
 section {
     padding: 40px 10%;
-    background-color: #ffffff; /* أقسام ببياض مريح */
+    background-color: #ffffff;
 }
 
 h2 {
     font-size: 28px;
-    color: #FF9E7B;
-    border-bottom: 2px solid #FFD6C1;
+    color: #4C7153;
+    border-bottom: 2px solid #BFD8BD;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 #skills {
-    background-color: #FFD6C1; /* خلفية ناعمة */
+    background-color: #E9F3E8;
     border-radius: 8px;
     padding: 30px;
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
 .skill h3 {
     font-size: 20px;
-    color: #3C3C3C;
+    color: #4C7153;
+    margin-bottom: 10px;
 }
 
 .skill-bar {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow: hidden;
 }
 
 .sql {
-    background-color: #FF9E7B;
+    background-color: #BFD8BD;
     width: 80%;
 }
 
 .python {
-    background-color: #FF9E7B;
+    background-color: #BFD8BD;
     width: 85%;
 }
 
 .excel {
-    background-color: #FF9E7B;
+    background-color: #BFD8BD;
     width: 90%;
 }
 
 .visualization {
-    background-color: #FF9E7B;
+    background-color: #BFD8BD;
     width: 75%;
 }
 
 footer {
-    background-color: #FF9E7B;
-    color: white;
+    background-color: #BFD8BD;
+    color: #2E2E2E;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #ffffff;
+    color: #2E2E2E;
     text-decoration: none;
 }
 
@@ -92,16 +104,19 @@ footer a:hover {
 }
 
 .cta-button {
-    background-color: #FF9E7B;
-    color: white;
+    display: inline-block;
+    margin-top: 20px;
     padding: 12px 25px;
-    border-radius: 5px;
+    background-color: #4C7153;
+    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #FFD6C1;
-    color: #333;
+    background-color: #BFD8BD;
+    color: #2E2E2E;
 }
 
