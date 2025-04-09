@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff0f5; 
-    color: #444;
+    background-color: #fff5e6; /* peachy background */
+    color: #333333;
 }
 
 header {
-    background-color: #d16ba5;
+    background-color: #ff8c69; /* coral/peach */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,21 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #b83b5e;
-    border-bottom: 2px solid #f8a5c2;
+    color: #e67300; /* warm orange */
+    border-bottom: 2px solid #ffb385;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #d16ba5;
+    background-color: #ff8c69;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #f8c291;
+    color: #ffe0cc;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -55,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #ffe6f0;
+    background-color: #fff0e0;
     border-radius: 8px;
     padding: 30px;
 }
@@ -73,7 +73,7 @@ footer a:hover {
 
 .skill h3 {
     font-size: 20px;
-    color: #6a0572;
+    color: #d35400;
     margin-bottom: 10px;
 }
 
@@ -81,28 +81,28 @@ footer a:hover {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #f0f0f0;
+    background-color: #ffe5d0;
     overflow: hidden;
 }
 
 /* Skill Bars */
 .sql {
-    background-color: #ff6f91;
+    background-color: #ffad99;
     width: 80%;
 }
 
 .python {
-    background-color: #845ec2;
+    background-color: #ffa07a;
     width: 85%;
 }
 
 .excel {
-    background-color: #ffc75f;
+    background-color: #ffcba4;
     width: 90%;
 }
 
 .visualization {
-    background-color: #f9f871;
+    background-color: #ffd1b3;
     width: 75%;
 }
 
