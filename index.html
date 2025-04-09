@@ -1,80 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I’m Afnan Rabab ,I am a passionate Data Analyst</p>
-    </header>
+/* ====== Base Style ====== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #2E2E2E;
+}
 
-    <!-- About Me Section -->
-<section id="about" class="fade-in">
-  <h2>📊 About Me</h2>
-  <p>
-    I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I've worked closely with data where accuracy meant everything.
-  </p>
-  <p>
-    That’s where my passion for data analysis began — not just gathering information, but understanding it. Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.
-  </p>
-  <p>
-    My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.
-  </p>
-  <a href="#projects" class="cta-button">View My Projects</a>
-</section>
+/* ====== Header ====== */
+header {
+    background-color: #589d62;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
 
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
 
-    </section>
+header p {
+    font-size: 18px;
+    margin-top: 0;
+}
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <h3>SQL</h3>
-                <div class="skill-bar sql"></div>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="skill-bar python"></div>
-            </div>
-            <div class="skill">
-                <h3>Excel</h3>
-                <div class="skill-bar excel"></div>
-            </div>
-            <div class="skill">
-                <h3>Data Visualization</h3>
-                <div class="skill-bar visualization"></div>
-            </div>
-        </div>
-    </section>
+/* ====== Section Layout ====== */
+section {
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+}
 
-    <!-- Footer Section -->
-   <footer>
-    <p>Contact me at: afnanrababah1@gmail.com</p>
-          <p>Based in Jordan</p>
-    <p>
-        <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a> |
-        <a href="https://public.tableau.com/app/profile/afnan7332/vizzes">Tableau</a>
-    </p>
-</footer>
-<script>
-  window.addEventListener('scroll', function () {
-    const elements = document.querySelectorAll('.fade-in');
-    elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 50) {
-        el.classList.add('visible');
-      }
-    });
-  });
-</script>
+h2 {
+    font-size: 28px;
+    color: #589d62;
+    border-bottom: 2px solid #c2dbc9;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
 
-</body>
-</html>
+/* ====== Skills Section ====== */
+#skills {
+    background-color: #f0f6f2;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 25px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    color: #3d7b4f;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 20px;
+    width: 100%;
+    background-color: #e6eee8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* ==== Progress Bars ==== */
+.sql, .python, .excel, .visualization {
+    background-color: #589d62;
+}
+
+.sql { width: 80%; }
+.python { width: 85%; }
+.excel { width: 90%; }
+.visualization { width: 75%; }
+
+/* ====== Certificates Section ====== */
+#certificates {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3d7b4f;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #589d62;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #589d62;
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #589d62;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer a {
+    color: #e5f1e8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Button Style (optional) ====== */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #589d62;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3d7b4f;
+}
+
 
