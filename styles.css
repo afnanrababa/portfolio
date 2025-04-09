@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #C3375A; /* Soft dark red for header */
+    background-color: #6B9A6E; /* Main green color for header */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,21 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #6B9A6E; /* Soft green for headings */
-    border-bottom: 2px solid #FF9E7B; /* Light orange for border */
+    color: #A1C6A1; /* Lighter green for headings */
+    border-bottom: 2px solid #6B9A6E; /* Darker green border */
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #C3375A; /* Soft dark red for footer */
+    background-color: #6B9A6E; /* Main green color for footer */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #FECC6A; /* Light yellow for links */
+    color: #A1C6A1; /* Lighter green for links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -55,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #FF9E7B; /* Soft orange for skills section */
+    background-color: #A1C6A1; /* Lighter green for skills section */
     border-radius: 8px;
     padding: 30px;
 }
@@ -73,7 +73,7 @@ footer a:hover {
 
 .skill h3 {
     font-size: 20px;
-    color: white;
+    color: #6B9A6E; /* Darker green for skill titles */
     margin-bottom: 10px;
 }
 
@@ -87,22 +87,22 @@ footer a:hover {
 
 /* Skill Bars */
 .sql {
-    background-color: #EB6548; /* Light orange for SQL skill */
+    background-color: #6B9A6E; /* Darker green for SQL skill */
     width: 80%;
 }
 
 .python {
-    background-color: #6B9A6E; /* Soft green for Python skill */
+    background-color: #A1C6A1; /* Lighter green for Python skill */
     width: 85%;
 }
 
 .excel {
-    background-color: #FF9E7B; /* Light peach for Excel skill */
+    background-color: #6B9A6E; /* Darker green for Excel skill */
     width: 90%;
 }
 
 .visualization {
-    background-color: #FECC6A; /* Soft yellow for visualization skill */
+    background-color: #A1C6A1; /* Lighter green for visualization skill */
     width: 75%;
 }
 
@@ -111,7 +111,7 @@ footer a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #6B9A6E; /* Soft green for CTA button */
+    background-color: #6B9A6E; /* Main green color for CTA button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -120,6 +120,7 @@ footer a:hover {
 }
 
 .cta-button:hover {
-    background-color: #FF9E7B; /* Soft peach on hover */
+    background-color: #A1C6A1; /* Lighter green on hover */
 }
+
 
