@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ECF0F1; /* Light grey background */
-    color: #2C3E50; /* Dark blue-grey text */
+    background-color: #ECF0F1; /* Very light gray background */
+    color: #7F8C8D; /* Light gray text */
 }
 
 header {
-    background-color: #2C3E50; /* Dark blue-grey */
+    background-color: #F1C40F; /* Light golden yellow */
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,21 +30,21 @@ section {
 
 h2 {
     font-size: 28px;
-    color: #E74C3C; /* Red for heading */
-    border-bottom: 2px solid #3498DB; /* Blue border */
+    color: #FF6F61; /* Soft coral for section headings */
+    border-bottom: 2px solid #3498DB; /* Light blue border */
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #2C3E50; /* Dark blue-grey */
+    background-color: #F1C40F; /* Light golden yellow */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #3498DB; /* Blue links */
+    color: #3498DB; /* Light blue links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -55,7 +55,7 @@ footer a:hover {
 
 /* Skills Section */
 #skills {
-    background-color: #F39C12; /* Warm orange background */
+    background-color: #FF6F61; /* Soft coral background for skills section */
     border-radius: 8px;
     padding: 30px;
 }
@@ -73,7 +73,7 @@ footer a:hover {
 
 .skill h3 {
     font-size: 20px;
-    color: #2C3E50; /* Dark blue-grey text */
+    color: white; /* White text for skill headings */
     margin-bottom: 10px;
 }
 
@@ -81,28 +81,28 @@ footer a:hover {
     height: 20px;
     width: 100%;
     border-radius: 5px;
-    background-color: #ECF0F1; /* Light grey for the skill bars */
+    background-color: #ECF0F1; /* Light gray for the skill bars */
     overflow: hidden;
 }
 
 /* Skill Bars */
 .sql {
-    background-color: #E74C3C; /* Red for SQL skill */
+    background-color: #3498DB; /* Light blue for SQL skill */
     width: 80%;
 }
 
 .python {
-    background-color: #3498DB; /* Blue for Python skill */
+    background-color: #F1C40F; /* Light golden yellow for Python skill */
     width: 85%;
 }
 
 .excel {
-    background-color: #F39C12; /* Orange for Excel skill */
+    background-color: #FF6F61; /* Soft coral for Excel skill */
     width: 90%;
 }
 
 .visualization {
-    background-color: #2C3E50; /* Dark blue-grey for Visualization skill */
+    background-color: #7F8C8D; /* Light gray for Visualization skill */
     width: 75%;
 }
 
@@ -111,7 +111,7 @@ footer a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #E74C3C; /* Red button */
+    background-color: #3498DB; /* Light blue button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -120,7 +120,7 @@ footer a:hover {
 }
 
 .cta-button:hover {
-    background-color: #2C3E50; /* Dark blue-grey on hover */
+    background-color: #FF6F61; /* Soft coral on hover */
 }
 
 
