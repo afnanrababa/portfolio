@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Portfolio</title>
-
-    <!-- Link CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Swiper CSS (for certificates slider) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-        <h1>Afnan Rababa</h1>
-        <p>Passionate Data Analyst | Problem Solver</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am a passionate Data Analyst</p>
     </header>
 
-    <!-- About -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m a data analyst with 6+ years of experience in data collection, organization, and visualization. I’m passionate about transforming raw data into meaningful insights using tools like Excel, SQL, and Python. I am continuously enhancing my skills and focusing now on deeper data analytics to support decision-making and impact.</p>
+        <p>
+            I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments.
+            From field operations to structured reports, I've worked closely with data where accuracy meant everything.
+        </p>
+        <p>
+            That’s where my passion for data analysis began — not just gathering information, but understanding it. Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.
+        </p>
+        <p>
+            My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.
+        </p>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
         <div class="skills-container">
             <div class="skill">
                 <h3>SQL</h3>
@@ -48,57 +52,59 @@
         </div>
     </section>
 
-    <!-- Certificates -->
+    <!-- Certifications Section -->
     <section id="certificates">
-        <h2>Certificates</h2>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Certificate 1 -->
-                <div class="swiper-slide">
-                    <img src="images/google-data-analytics.png" alt="Google Data Analytics">
-                    <p>Google Data Analytics</p>
-                </div>
-                <!-- Certificate 2 -->
-                <div class="swiper-slide">
-                    <img src="images/coursera-excel.png" alt="Coursera Excel">
-                    <p>Excel for Data Analysis (Coursera)</p>
-                </div>
-                <!-- Add more certificates here -->
-            </div>
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+        <h2>My Certifications</h2>
+
+        <!-- Certificate 1 -->
+        <div class="certificate">
+            <h3>Google Data Analytics Certificate</h3>
+            <a href="https://www.coursera.org/learn/google-data-analytics" target="_blank">View Certificate</a>
         </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate">
+            <h3>IBM Data Science Professional Certificate</h3>
+            <a href="https://www.coursera.org/professional-certificates/ibm-data-science" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate">
+            <h3>Python for Data Science and AI (Coursera)</h3>
+            <a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="certificate">
+            <h3>Data Analysis with Python</h3>
+            <a href="https://www.coursera.org/learn/data-analysis-with-python" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="certificate">
+            <h3>Excel for Data Analysis (Coursera)</h3>
+            <a href="https://www.coursera.org/learn/excel-data-analysis" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- Certificate 6 -->
+        <div class="certificate">
+            <h3>SQL for Data Science (Coursera)</h3>
+            <a href="https://www.coursera.org/learn/sql-for-data-science" target="_blank">View Certificate</a>
+        </div>
+
+        <!-- Certificate 7 -->
+        <div class="certificate">
+            <h3>Google IT Support Professional Certificate</h3>
+            <a href="https://www.coursera.org/professional-certificates/google-it-support" target="_blank">View Certificate</a>
+        </div>
+
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>Contact: afnan@example.com | Jordan</p>
-        <p>
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> |
-            <a href="https://public.tableau.com/app/profile/your-tableau" target="_blank">Tableau</a>
-        </p>
+        <p>Contact me at: example@example.com</p>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Swiper init -->
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 </body>
 </html>
-
 
