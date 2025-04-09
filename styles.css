@@ -1,254 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff; /* White background */
-            color: #333333;
-        }
+/* الخلفية العامة */
+body {
+    background-color: #ffffff; /* أبيض */
+    color: #333333;            /* رمادي غامق للكتابة */
+}
 
-        header {
-            background-color: #589d62; /* Light Green */
-            color: white;
-            text-align: center;
-            padding: 25px 0;
-        }
+/* الترويسة والفوتر */
+header, footer {
+    background-color: #589d62; /* أخضر هادئ */
+    color: white;
+}
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+/* العناوين */
+h2 {
+    color: #589d62; /* أخضر للعناوين */
+    border-bottom: 2px solid #fbb0bb; /* وردي باهت كخط سفلي */
+}
 
-        header p {
-            font-size: 18px;
-            margin-top: 0;
-        }
+/* روابط الفوتر واللينكدإن */
+footer a,
+.links a {
+    color: #589d62; /* أخضر للرابط */
+}
 
-        section {
-            padding: 40px 10%;
-        }
+/* أشرطة المهارات */
+.sql { background-color: #aed8c0; }         /* أخضر فاتح جداً */
+.python { background-color: #9dd3ae; }
+.excel { background-color: #8bc69c; }
+.visualization { background-color: #78b989; }
 
-        h2 {
-            font-size: 28px;
-            color: #589d62; /* Light Green */
-            border-bottom: 2px solid #fbb0bb; /* Light Pink */
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
+/* خلفية قسم المهارات */
+#skills {
+    background-color: #f1f1f1; /* رمادي فاتح */
+}
 
-        footer {
-            background-color: #589d62; /* Light Green */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Skills Section */
-        #skills {
-            background-color: #f1f1f1;
-            border-radius: 8px;
-            padding: 30px;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .skill {
-            width: 45%;
-            margin-bottom: 20px;
-        }
-
-        .skill h3 {
-            font-size: 20px;
-            color: #589d62; /* Light Green */
-            margin-bottom: 10px;
-        }
-
-        .skill-bar {
-            height: 20px;
-            width: 100%;
-            border-radius: 5px;
-            background-color: #f0f0f0;
-        }
-
-        /* Skill Bars */
-        .sql {
-            background-color: #ffad99;
-            width: 80%;
-        }
-
-        .python {
-            background-color: #ffa07a;
-            width: 85%;
-        }
-
-        .excel {
-            background-color: #ffcba4;
-            width: 90%;
-        }
-
-        .visualization {
-            background-color: #ffd1b3;
-            width: 75%;
-        }
-
-        /* About Section */
-        #about {
-            background-color: #ffffff;
-            color: #333;
-            padding: 20px;
-        }
-
-        /* Slide Show for Certificates */
-        .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-        }
-
-        .mySlides {
-            display: none;
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .slideshow-container img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s ease;
-            user-select: none;
-        }
-
-        .prev {
-            left: 0;
-        }
-
-        .next {
-            right: 0;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        /* Links Section */
-        .links {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .links a {
-            color: #589d62; /* Light Green */
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 15px;
-        }
-
-        .links a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a passionate Data Analyst</p>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I've worked closely with data where accuracy meant everything.</p>
-        <p>That’s where my passion for data analysis began — not just gathering information, but understanding it. Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
-        <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
-    </section>
-
-    <!-- Certificates Section (Slide Show) -->
-    <section id="certificates">
-        <h2>My Certificates</h2>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="certificate1.jpg" alt="Certificate 1">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="certificate2.jpg" alt="Certificate 2">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="certificate3.jpg" alt="Certificate 3">
-            </div>
-
-            <!-- Navigation Arrows -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    </section>
-
-    <!-- Links Section -->
-    <section class="links">
-        <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
-        <a href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau</a>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>Contact me at: afnanrabababah@gmail.com.com</p>
-    </footer>
-
-    <script>
-        // Slideshow JavaScript
-        let slideIndex = 0;
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-
-        showSlides();
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-    </script>
-</body>
-</html>
+/* خلفية قسم الشهادات */
+#certificates {
+    background-color: #ffffff;
+}
 
