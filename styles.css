@@ -1,74 +1,160 @@
-
+/* General Styles */
 body {
-    background-color: #ffffff; 
-    color: #333333;            
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333333;
+    line-height: 1.6;
 }
 
-
-header, footer {
-    background-color: #589d62;
-    color: white;
-}
-
-h2 {
-    color: #589d62; 
-    border-bottom: 2px solid #fbb0bb; 
-}
-
-/* روابط الفوتر واللينكدإن */
-footer a,
-.links a {
-    color: #589d62; 
-}
-
-
-.sql { background-color: #aed8c0; }     
-.python { background-color: #9dd3ae; }
-.excel { background-color: #8bc69c; }
-.visualization { background-color: #78b989; }
-
-
-#skills {
-    background-color: #f1f1f1; 
-}
-/* Projects Section Styles */
-#projects {
-    padding: 40px 10%;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.project-links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.project-link {
+header {
     background-color: #589d62; /* Light Green */
     color: white;
-    padding: 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 40px 0;
 }
 
-.project-link:hover {
-    background-color: #4a7d4a;
-}
-
-.project-link h3 {
-    font-size: 24px;
+header h1 {
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
-.project-link p {
-    font-size: 16px;
+header p {
+    font-size: 18px;
+    margin-top: 0;
 }
 
-/* خلفية قسم الشهادات */
-#certificates {
-    background-color: #ffffff;
+section {
+    padding: 50px 10%;
+}
+
+h2 {
+    font-size: 32px;
+    color: #589d62; /* Light Green */
+    border-bottom: 2px solid #fbb0bb; /* Light Pink */
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #589d62; /* Light Green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #589d62; /* Light Green */
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Slide Show for Certificates */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slideshow-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.links a {
+    color: #589d62; /* Light Green */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.links a:hover {
+    text-decoration: underline;
 }
 
