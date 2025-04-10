@@ -1,36 +1,70 @@
-/* الخلفية العامة */
+
 body {
-    background-color: #ffffff; /* أبيض */
-    color: #333333;            /* رمادي غامق للكتابة */
+    background-color: #ffffff; 
+    color: #333333;            
 }
 
-/* الترويسة والفوتر */
+
 header, footer {
-    background-color: #589d62; /* أخضر هادئ */
+    background-color: #589d62;
     color: white;
 }
 
-/* العناوين */
 h2 {
-    color: #589d62; /* أخضر للعناوين */
-    border-bottom: 2px solid #fbb0bb; /* وردي باهت كخط سفلي */
+    color: #589d62; 
+    border-bottom: 2px solid #fbb0bb; 
 }
 
 /* روابط الفوتر واللينكدإن */
 footer a,
 .links a {
-    color: #589d62; /* أخضر للرابط */
+    color: #589d62; 
 }
 
-/* أشرطة المهارات */
-.sql { background-color: #aed8c0; }         /* أخضر فاتح جداً */
+
+.sql { background-color: #aed8c0; }     
 .python { background-color: #9dd3ae; }
 .excel { background-color: #8bc69c; }
 .visualization { background-color: #78b989; }
 
-/* خلفية قسم المهارات */
+
 #skills {
-    background-color: #f1f1f1; /* رمادي فاتح */
+    background-color: #f1f1f1; 
+}
+/* Projects Section Styles */
+#projects {
+    padding: 40px 10%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-link {
+    background-color: #589d62; /* Light Green */
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #4a7d4a;
+}
+
+.project-link h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-link p {
+    font-size: 16px;
 }
 
 /* خلفية قسم الشهادات */
