@@ -1,115 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Afnan Rababa</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Welcome to My Portfolio</h1>
-        <p>Iam Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
+        <p>I'm Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I've worked closely with data where accuracy meant everything.</p>
-        <p>That’s where my passion for data analysis began — not just gathering information, but understanding it. Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
-        <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
+        <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments.</p>
+        <p>I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
+        <p>My goal is to turn raw data into powerful stories that drive decisions and create real-world impact.</p>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div class="skill">
-                <h3>SQL</h3>
-                <div class="skill-bar sql"></div>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="skill-bar python"></div>
-            </div>
-            <div class="skill">
-                <h3>Excel</h3>
-                <div class="skill-bar excel"></div>
-            </div>
-            <div class="skill">
-                <h3>Data Visualization</h3>
-                <div class="skill-bar visualization"></div>
-            </div>
+            <div class="skill"><h3>SQL</h3><div class="skill-bar" style="width: 90%"></div></div>
+            <div class="skill"><h3>Python</h3><div class="skill-bar" style="width: 85%"></div></div>
+            <div class="skill"><h3>Excel</h3><div class="skill-bar" style="width: 80%"></div></div>
+            <div class="skill"><h3>Data Visualization</h3><div class="skill-bar" style="width: 75%"></div></div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project">
+
+        <div class="project-card">
             <h3>Assessment Food Expenditure Among Syrian Refugees Households</h3>
             <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
             <p>Analyzed food expenditure patterns among refugee households to identify factors influencing spending. Created interactive dashboards to visualize the findings.</p>
-            <a href="your-project-link" target="_blank">View Project</a>
+            <a class="btn" href="your-project-link" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Company Performance Analysis for Investors (2018–2021)</h3>
+            <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+            <p>Conducted an analysis of company performance from 2018 to 2021 focusing on revenues, profits, assets, market value, and employee count. Delivered investment recommendations based on key performance indicators.</p>
+            <a class="btn" href="portfolio-link" target="_blank">Portfolio Page</a>
+            <a class="btn" href="dashboard-link" target="_blank">Dashboard</a>
+            <a class="btn" href="eda-link" target="_blank">EDA Report</a>
         </div>
     </section>
 
-    <!-- Certificates Section (Slide Show) -->
     <section id="certificates">
         <h2>My Certificates</h2>
         <div class="slideshow-container">
-            <!-- Slide 1 -->
-            <div class="mySlides fade">
-                <img src="FOUNDATION.jpeg" alt="Foundation Certificate">
-            </div>
-            <!-- Slide 2 -->
-            <div class="mySlides fade">
-                <img src="ANANLYZE.jpeg" alt="Analyze Certificate">
-            </div>
-            <!-- Slide 3 -->
-            <div class="mySlides fade">
-                <img src="ASK.jpeg" alt="Ask Certificate">
-            </div>
-            <!-- Slide 4 -->
-            <div class="mySlides fade">
-                <img src="PREPARE.jpeg" alt="Prepare Certificate">
-            </div>
-            <!-- Slide 5 -->
-            <div class="mySlides fade">
-                <img src="google.jpeg" alt="Google Certificate">
-            </div>
-            <!-- Slide 6 -->
-            <div class="mySlides fade">
-                <img src="process.jpeg" alt="Process Certificate">
-            </div>
-            <!-- Slide 7 -->
-            <div class="mySlides fade">
-                <img src="share.jpeg" alt="Share Certificate">
-            </div>
+            <div class="mySlides fade"><img src="FOUNDATION.jpeg" alt="Foundation Certificate"></div>
+            <div class="mySlides fade"><img src="ANANLYZE.jpeg" alt="Analyze Certificate"></div>
+            <div class="mySlides fade"><img src="ASK.jpeg" alt="Ask Certificate"></div>
+            <div class="mySlides fade"><img src="PREPARE.jpeg" alt="Prepare Certificate"></div>
+            <div class="mySlides fade"><img src="google.jpeg" alt="Google Certificate"></div>
+            <div class="mySlides fade"><img src="process.jpeg" alt="Process Certificate"></div>
+            <div class="mySlides fade"><img src="share.jpeg" alt="Share Certificate"></div>
 
-            <!-- Navigation Arrows -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </section>
 
-    <!-- Links Section -->
     <section class="links">
         <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
         <a href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau</a>
     </section>
 
-    <!-- Footer Section -->
     <footer>
         <p>Contact me at: afnanraabah1@gmail.com</p>
         <p><strong>Location:</strong> Jordan</p>
     </footer>
 
     <script>
-        // Slideshow JavaScript
         let slideIndex = 0;
-
         function showSlides() {
             let slides = document.getElementsByClassName("mySlides");
             for (let i = 0; i < slides.length; i++) {
@@ -118,17 +85,18 @@
             slideIndex++;
             if (slideIndex > slides.length) { slideIndex = 1 }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            setTimeout(showSlides, 2000);
         }
-
         showSlides();
 
         function plusSlides(n) {
-            showSlides(slideIndex += n);
+            slideIndex += n - 1;
+            showSlides();
         }
     </script>
 </body>
 </html>
+
 
 
 
