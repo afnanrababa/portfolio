@@ -1,4 +1,4 @@
-/* ========== أساسيات الصفحة ========== */
+/* ========== الأساسيات ========== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #f5fbf7, #e0f2f1);
@@ -7,58 +7,60 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4 {
-    color: #2e7d5a;
-    margin-bottom: 10px;
+/* ========== الهيدر (Header) ========== */
+header {
+    background: linear-gradient(135deg, #f2f7f5, #a5d6a7);
+    padding: 4rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
 }
 
-p {
-    line-height: 1.6;
+header h1 {
+    font-size: 3rem;
     margin-bottom: 10px;
+    color: #388e3c;
 }
 
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* ========== التنسيق العام للمحتوى ========== */
 section {
-    padding: 2rem 1.5rem;
+    padding: 3rem 2rem;
     max-width: 1100px;
     margin: auto;
 }
 
-header {
-    background: linear-gradient(135deg, #e0f2f1, #a5d6a7);
-    padding: 3rem 1rem;
-    text-align: center;
+h2, h3 {
+    color: #388e3c;
 }
 
-/* ========== صورة الهيدر مع النص ========== */
-header div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-header img {
-    max-width: 320px;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* ========== التفاعل مع الأزرار ========== */
+.btn {
+    background-color: #388e3c;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
-/* ========== قسم About مع صورة ========== */
-#about img {
-    max-width: 350px;
-    border-radius: 10px;
+.btn:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
 }
 
-#about div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-}
-
-/* ========== المهارات ========== */
+/* ========== التنسيق للأقسام والمهارات ========== */
 .skills-container {
     display: flex;
     flex-direction: column;
@@ -82,122 +84,58 @@ header img {
     border-radius: 8px;
 }
 
-/* ========== روابط وأزرار ========== */
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.custom-btn {
-    background-color: #4caf50;
-    color: white;
-    padding: 0.8rem 1.6rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.custom-btn:hover {
-    background-color: #388e3c;
-    transform: scale(1.05);
-}
-
-/* ========== المشاريع (كروت) ========== */
+/* ========== تصميم الـ كروت للمشاريع ========== */
 .project-card {
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 2rem;
     margin: 2rem 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.project-card a.btn {
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+.project-card a {
+    margin-top: 15px;
     display: inline-block;
-    background-color: #66bb6a;
-    color: #fff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
-.project-card a.btn:hover {
-    background-color: #388e3c;
-}
-
-/* ========== السلايد للـ شهادات ========== */
+/* ========== التفاعل مع السلايد للـ شهادات ========== */
 .slideshow-container {
     position: relative;
     max-width: 600px;
     margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .mySlides {
     display: none;
+    position: absolute;
+    width: 100%;
+    transition: all 1s ease-in-out;
 }
 
 .mySlides img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
+/* ========== السلايدر / الانتقال بين الصور ========== */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     padding: 16px;
-    color: #388e3c;
-    font-weight: bold;
-    font-size: 18px;
-    user-select: none;
-    transition: 0.3s ease;
-}
-
-.prev:hover, .next:hover {
-    color: #1b5e20;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-/* ========== الروابط ========== */
-.links {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.links a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #2e7d5a;
-    font-weight: bold;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
-/* ========== الفوتر ========== */
-footer {
-    background-color: #e8f5e9;
-    text-align: center;
-    padding: 1rem 0;
-    color: #2e7d5a;
-    font-size: 0.95rem;
-}
+    color: #
 
 
