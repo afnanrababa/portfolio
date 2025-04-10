@@ -1,133 +1,100 @@
-/* General Styles */
+:root {
+    --background-color: #ffffff;
+    --primary-color: #6db38e;
+    --primary-dark: #589e79;
+    --text-color: #2c3e50;
+    --section-bg: #f5f5f5;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* White background */
-    color: #333333;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #6DBE45; /* Light Green */
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 25px 0;
+    padding: 40px 20px;
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
-    margin-top: 0;
-}
-
-section {
-    padding: 40px 10%;
+h1, h2, h3 {
+    color: var(--text-color);
 }
 
 h2 {
-    font-size: 28px;
-    color: #6DBE45; /* Light Green */
-    border-bottom: 2px solid #FFB0BB; /* Light Pink */
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #6DBE45; /* Light Green */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    padding: 30px;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skill {
-    width: 45%;
-    margin-bottom: 20px;
-}
-
-.skill h3 {
-    font-size: 20px;
-    color: #6DBE45; /* Light Green */
-    margin-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .skill-bar {
-    height: 20px;
-    width: 100%;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.skills-container .skill {
+    margin-bottom: 15px;
+}
+
+.project-card {
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
     border-radius: 5px;
-    background-color: #f0f0f0;
+    transition: background-color 0.3s;
 }
 
-/* Skill Bars */
-.sql {
-    background-color: #FFAD99;
-    width: 80%;
+.btn:hover {
+    background-color: var(--primary-dark);
 }
 
-.python {
-    background-color: #FF9A7A;
-    width: 85%;
-}
-
-.excel {
-    background-color: #FFCCA4;
-    width: 90%;
-}
-
-.visualization {
-    background-color: #FFD1B3;
-    width: 75%;
-}
-
-/* About Section */
-#about {
-    background-color: #ffffff;
-    color: #333;
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
     padding: 20px;
 }
 
-/* Slide Show for Certificates */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 0 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .mySlides {
     display: none;
-    width: 100%;
+    text-align: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 300px;
     border-radius: 10px;
 }
 
-.slideshow-container img {
-    width: 100%;
-    border-radius: 10px;
+.slideshow-container {
+    position: relative;
 }
 
 .prev, .next {
@@ -136,14 +103,11 @@ footer a:hover {
     top: 50%;
     padding: 16px;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s ease;
+    font-size: 24px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 3px;
+    transform: translateY(-50%);
     user-select: none;
-}
-
-.prev {
-    left: 0;
 }
 
 .next {
@@ -151,23 +115,6 @@ footer a:hover {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Links Section */
-.links {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.links a {
-    color: #6DBE45; /* Light Green */
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-}
-
-.links a:hover {
-    text-decoration: underline;
+    background-color: rgba(0,0,0,0.6);
 }
 
