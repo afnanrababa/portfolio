@@ -1,100 +1,128 @@
-:root {
-    --background-color: #ffffff;
-    --primary-color: #6db38e;
-    --primary-dark: #589e79;
-    --text-color: #2c3e50;
-    --section-bg: #f5f5f5;
-}
-
+/* أساسيات الصفحة */
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5fdf8;
+    color: #333;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    padding: 0;
 }
 
+/* العناوين */
+h1, h2, h3, h4 {
+    color: #2e7d5a;
+    margin-bottom: 10px;
+}
+
+/* الهيدر */
 header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #dff5ec;
     text-align: center;
-    padding: 40px 20px;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h1, h2, h3 {
-    color: var(--text-color);
+header h1 {
+    font-size: 2.5rem;
 }
 
-h2 {
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+header p {
+    font-size: 1.2rem;
+    color: #4b715d;
+}
+
+/* قسم التعريف */
+#about {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+/* المهارات */
+#skills {
+    background-color: #f0fbf5;
+    padding: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
 }
 
 .skill-bar {
-    height: 10px;
-    background-color: var(--primary-color);
-    border-radius: 4px;
+    height: 12px;
+    background-color: #a5d6a7;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-.skills-container .skill {
-    margin-bottom: 15px;
+/* المشاريع */
+#projects {
+    padding: 2rem;
+    background-color: #ffffff;
 }
 
 .project-card {
-    background-color: var(--section-bg);
+    background-color: #fdfefe;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 5px solid #81c784;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
 
-.btn {
+.project-card h3 {
+    margin-top: 0;
+    color: #2e7d5a;
+}
+
+.project-card ul {
+    padding-left: 1.2rem;
+}
+
+/* الأزرار */
+a.btn {
     display: inline-block;
-    background-color: var(--primary-color);
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 10px 18px;
+    background-color: #66bb6a;
     color: white;
-    padding: 10px 15px;
-    margin: 10px 10px 0 0;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: var(--primary-dark);
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.links {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.links a {
-    margin: 0 10px;
-    color: var(--primary-color);
-    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
     font-weight: bold;
 }
 
-.mySlides {
-    display: none;
+a.btn:hover {
+    background-color: #4caf50;
+}
+
+/* الشهادات */
+#certificates {
+    padding: 2rem;
+    background-color: #f0fbf5;
     text-align: center;
 }
 
-.mySlides img {
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 10px;
+.slideshow-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
 }
 
-.slideshow-container {
-    position: relative;
+.mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
 
 .prev, .next {
@@ -102,11 +130,11 @@ footer {
     position: absolute;
     top: 50%;
     padding: 16px;
-    color: white;
-    font-size: 24px;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 3px;
-    transform: translateY(-50%);
+    margin-top: -22px;
+    color: #2e7d5a;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
     user-select: none;
 }
 
@@ -114,7 +142,35 @@ footer {
     right: 0;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.6);
+.prev {
+    left: 0;
 }
+
+/* الروابط الاجتماعية */
+section.links {
+    background-color: #dff5ec;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+section.links a {
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2e7d5a;
+}
+
+section.links a:hover {
+    color: #1b5e20;
+}
+
+/* الفوتر */
+footer {
+    background-color: #c8e6c9;
+    padding: 1rem;
+    text-align: center;
+    color: #2e7d5a;
+    font-size: 0.9rem;
+}
+
 
