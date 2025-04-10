@@ -3,293 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Afnan Rababa</title>
+    <title>Portfolio</title>
+    <!-- ربط ملف CSS الخارجي -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333333;
-        }
-
-        header {
-            background-color: #589d62;
-            color: white;
-            text-align: center;
-            padding: 25px 0;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 0;
-        }
-
-        section {
-            padding: 40px 10%;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #589d62;
-            border-bottom: 2px solid #fbb0bb;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #589d62;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Skills Section */
-        #skills {
-            background-color: #f1f1f1;
-            border-radius: 8px;
-            padding: 30px;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .skill {
-            width: 45%;
-            margin-bottom: 20px;
-        }
-
-        .skill h3 {
-            font-size: 20px;
-            color: #589d62;
-            margin-bottom: 10px;
-        }
-
-        .skill-bar {
-            height: 20px;
-            width: 100%;
-            border-radius: 5px;
-            background-color: #e8e8e8;
-        }
-
-        /* Skill Bars */
-        .sql { background-color: #aed8c0; width: 80%; }
-        .python { background-color: #9dd3ae; width: 85%; }
-        .excel { background-color: #8bc69c; width: 90%; }
-        .visualization { background-color: #78b989; width: 75%; }
-
-        /* About Section */
-        #about {
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        /* Certificates Slider */
-        .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-        }
-
-        .mySlides {
-            display: none;
-        }
-
-        .slideshow-container img {
-            width: 100%;
-            border-radius: 10px;
-            max-height: 500px;
-            object-fit: contain;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s ease;
-            user-select: none;
-        }
-
-        .prev { left: 0; }
-        .next { right: 0; }
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        /* Links Section */
-        .links {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .links a {
-            color: #589d62;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 15px;
-        }
-
-        .links a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- Header Section -->
     <header>
         <h1>Welcome to My Portfolio</h1>
-        <p>Iam Afnan Raaba| Passionate Data Analyst | Problem Solver</p>
+        <p>Passionate Data Analyst | Problem Solver</p>
     </header>
 
-    <!-- About Me -->
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I've worked closely with data where accuracy meant everything.</p>
         <p>That’s where my passion for data analysis began — not just gathering information, but understanding it. Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
         <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
     </section>
-    <!-- Project Details Section -->
-<section id="projects">
-    <h2>Assessment of Food Expenditure Among Syrian Refugees Households</h2>
-    <p><strong>Duration:</strong> Jan 2025 - Feb 2025</p>
-    <p><strong>Company:</strong> Associated with Training and Competitions by Correlation One</p>
-    <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
 
-    <h3>Project Overview:</h3>
-    <p>Analyzed food expenditure patterns among refugee households to identify factors influencing spending.</p>
-    <p><strong>Data Curation:</strong> Used Excel for cleaning and organizing the data.</p>
-    <p><strong>Exploratory Data Analysis (EDA):</strong> Used Python to identify patterns in food expenditure and analyze factors impacting food expenditure.</p>
-    <p><strong>Identifying At-Risk Households:</strong> Analyzed data to identify households struggling to cover food expenses.</p>
-    <p><strong>Interactive Dashboards:</strong> Created Tableau dashboards to visualize and present the findings in an easy-to-understand way.</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
 
-    <h3>Skills:</h3>
-    <ul>
-        <li>Python (Programming Language)</li>
-        <li>Data Visualization</li>
-        <li>Data Curation</li>
-    </ul>
-
-    <!-- Project Links Section -->
-    <div class="project-links">
-        <!-- Presentation Link -->
-        <a href="https://link_to_your_presentation.com" target="_blank" class="project-link">
-            <h3>View My Presentation</h3>
-            <p>Explore the details of my project through an in-depth presentation.</p>
-        </a>
-
-        <!-- Tableau Dashboard Link -->
-        <a href="https://public.tableau.com/views/YourTableauProject/YourDashboard" target="_blank" class="project-link">
-            <h3>View My Interactive Dashboard</h3>
-            <p>Check out the interactive data visualizations and insights from my project.</p>
-        </a>
-
-        <!-- EDA Link -->
-        <a href="https://github.com/yourusername/eda_project" target="_blank" class="project-link">
-            <h3>View My EDA Project</h3>
-            <p>Analyze the data and explore the exploratory data analysis (EDA) results.</p>
-        </a>
-    </div>
-</section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <h3>SQL</h3>
-                <div class="skill-bar sql"></div>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="skill-bar python"></div>
-            </div>
-            <div class="skill">
-                <h3>Excel</h3>
-                <div class="skill-bar excel"></div>
-            </div>
-            <div class="skill">
-                <h3>Data Visualization</h3>
-                <div class="skill-bar visualization"></div>
-            </div>
+        <div class="project">
+            <h3>Assessment Food Expenditure Among Syrian Refugees Households</h3>
+            <img src="food_expenditure_project.jpg" alt="Food Expenditure Project">
+            <p><strong>Timeline:</strong> Jan 2025 - Feb 2025</p>
+            <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+            <p>Analyzed food expenditure patterns among refugee households to identify factors influencing spending.</p>
         </div>
     </section>
 
-    <!-- Certificates -->
+    <!-- Certificates Section (Slide Show) -->
     <section id="certificates">
         <h2>My Certificates</h2>
         <div class="slideshow-container">
-            <div class="mySlides"><img src="google.jpeg" alt="Certificate 1"></div>
-            <div class="mySlides"><img src="share.jpeg" alt="Certificate 2"></div>
-            <div class="mySlides"><img src="ANANLYZE.jpeg" alt="Certificate 3"></div>
-            <div class="mySlides"><img src="process.jpeg" alt="Certificate 4"></div>
-            <div class="mySlides"><img src="PREPARE.jpeg" alt="Certificate 5"></div>
-            <div class="mySlides"><img src="ASK.jpeg" alt="Certificate 6"></div>
-            <div class="mySlides"><img src="FOUNDATION.jpeg" alt="Certificate 7"></div>
-
+            <div class="mySlides fade">
+                <img src="certificate1.jpg" alt="Certificate 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="certificate2.jpg" alt="Certificate 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="certificate3.jpg" alt="Certificate 3">
+            </div>
+            <!-- Navigation Arrows -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </section>
 
-    <!-- Links -->
+    <!-- Links Section -->
     <section class="links">
         <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
         <a href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau</a>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
         <p>Contact me at: afnanraabah1@gmail.com</p>
         <p><strong>Location:</strong> Jordan</p>
     </footer>
 
-    <!-- JavaScript for Slider -->
     <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+        // Slideshow JavaScript
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        showSlides();
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-
-        function showSlides(n) {
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-
-        setInterval(() => {
-            plusSlides(1);
-        }, 4000); // Every 4 seconds
     </script>
 </body>
 </html>
