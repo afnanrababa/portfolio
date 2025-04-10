@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<header style="background: linear-gradient(135deg, #e0f2f1, #a5d6a7); padding: 3rem 1rem;">
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; max-width: 1100px; margin: auto;">
-        
-        <!-- ✅ صورة تعمل بشكل مؤكد -->
-        <img src="https://raw.githubusercontent.com/undraw/undraw/master/static/undraw_data_trends_re_w3pm.svg" 
-             alt="Data Analyst Illustration" 
-             style="max-width: 320px; width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-        <!-- النص الترحيبي -->
-        <div style="text-align: center; max-width: 600px;">
-            <h1 style="font-size: 2.5rem; color: #2e7d5a; margin-bottom: 1rem;">Welcome to My Portfolio</h1>
-            <p style="font-size: 1.2rem; color: #3c6e59;">I'm Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Afnan Rababa</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
+            <img src="https://undraw.co/api/illustrations/data_trends.svg" alt="Data Analyst" style="max-width: 320px; border-radius: 12px;">
         </div>
-    </div>
-</header>
+    </header>
 
-
-
-   <section id="about">
-    <h2>About Me</h2>
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
-
-        <img src="https://undraw.io/illustrations/undraw_Data_trends_re_w3pm.svg" alt="Data Analyst Illustration" style="max-width: 350px; border-radius: 10px; flex: 1; min-width: 250px;">
-
-
-        <div style="flex: 2; min-width: 250px;">
-            <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments.</p>
-            <p>From field operations to structured reports, I've worked closely with data where accuracy meant everything.</p>
-            <p>That’s where my passion for data analysis began — not just gathering information, but understanding it.</p>
-            <p>Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
-            <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact.</p>
-            <p>This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
+    <section id="about">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+            <img src="https://undraw.co/api/illustrations/data_trends.svg" alt="Data Analyst" style="max-width: 300px; border-radius: 10px;">
+            <div>
+                <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments.</p>
+                <p>From field operations to structured reports, I've worked closely with data where accuracy meant everything. That's where my passion for data analysis began — not just gathering information, but understanding it.</p>
+                <p>Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
+                <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="skills">
         <h2>Skills</h2>
@@ -47,106 +37,48 @@
         </div>
     </section>
 
-   <section id="projects">
-    <h2>My Projects</h2>
+    <section id="projects">
+        <h2>My Projects</h2>
 
-    <div class="project-card">
-        <h3>Assessment Food Expenditure Among Syrian Refugees Households</h3>
-        
-        <h4>Introduction</h4>
-        <p>  The Syrian crisis, which began in 2011, led to the displacement of approximately 5.5 million refugees, severely impacting their ability  <p>
-           <p>   to meet basic needs, especially food. Food is a fundamental pillar for every household, and factors such as low income, <p>
-            <p>  large family sizes, and limited government support have made it increasingly difficult to cover food expenditures. <p>
-             <p> These challenges have significantly influenced food choices, with potential long-term effects on health and well-being.  <p>
-             <p> This project aims to analyze these factors and assess their impact on food expenditure patterns in refugee households, <p>
-            <p>  focusing on regions in <strong>Kurdistan, Iraq</strong>, and <strong>Jordan</strong>.</p>
-        
-        <h4>Business Impact</h4>
-        <p>Uncovering these insights can drive meaningful action in several key areas:</p>
-        <ul>
-            <li><strong>Supporting Host Countries:</strong> The data can assist host countries in identifying the most critical needs of refugees, enabling them to target
-                food assistance more effectively and ensure that the most vulnerable households receive adequate support.</li>
-            <li><strong> Helping Organizations Tackle Food Insecurity:</strong> Relevant organizations can leverage this data to develop strategies for addressing food insecurity, 
-                        creating job opportunities for qualified refugees, and offering training programs for those not yet able to enter the labor market—aligning with the host 
-                        country's regulations and economic landscape.</li>
-        </ul>
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Assessment Food Expenditure Among Syrian Refugees Households</h3>
+            <h4>Introduction</h4>
+            <p>The Syrian crisis, which began in 2011, led to the displacement of approximately 5.5 million refugees, severely impacting their ability to meet basic needs, especially food...</p>
+            <h4>Business Impact</h4>
+            <p>Uncovering these insights can drive meaningful action in several key areas...</p>
 
-        <h4>Tools Used</h4>
-        <ul>
-            <li><strong>Excel:</strong> Used for data cleaning, basic analysis, and organizing the dataset.</li>
-            <li><strong>Python:</strong> Utilized for data analysis,using libraries such as Pandas, NumPy, and Matplotlib.</li>
-            <li><strong>Tableau:</strong> Created interactive dashboards and visualizations to present the findings and make the data insights easily accessible to stakeholders.</li>
-        </ul>
+            <h4>Tools Used</h4>
+            <ul>
+                <li><strong>Excel:</strong> Used for data cleaning and organizing the dataset.</li>
+                <li><strong>Python:</strong> Utilized for data analysis using libraries like Pandas, NumPy, and Matplotlib.</li>
+                <li><strong>Tableau:</strong> Created interactive dashboards and visualizations to present the findings.</li>
+            </ul>
 
-        <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/EZCCdkKxIF1BrQIY6J_3mdkB5rV1_IQeN-ZJIS6X1ZnOHg?e=GFSzV3&nav=eyJzSWQiOjI1NiwiY0lkIjowfQ" target="_blank">View Project</a>
-         <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/REFUGEES_17384413279340/Story1" target="_blank">Dashboard</a>
-          <a class="btn" href="https://colab.research.google.com/drive/1HyiBYz45JkEe5As2d9sixfUoPEbSsKDh?usp=sharing">EDA Report</a>
-    </div>
-</section>
+            <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/EZCCdkKxIF1BrQIY6J_3mdkB5rV1_IQeN-ZJIS6X1ZnOHg?e=GFSzV3&nav=eyJzSWQiOjI1NiwiY0lkIjowfQ" target="_blank">View Project</a>
+            <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/REFUGEES_17384413279340/Story1" target="_blank">Dashboard</a>
+            <a class="btn" href="https://colab.research.google.com/drive/1HyiBYz45JkEe5As2d9sixfUoPEbSsKDh?usp=sharing">EDA Report</a>
+        </div>
 
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Company Performance Analysis: Key Data for Investors (2018-2021)</h3>
+            <h4>Introduction</h4>
+            <p>In the business world, companies face numerous challenges that directly impact their financial performance...</p>
+            <h4>Business Impact</h4>
+            <p>Exploring this data helps investors identify the most profitable companies, those with the highest market value, and the largest asset size...</p>
 
-<section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="project-card">
-        <h3>Company Performance Analysis: Key Data for Investors (2018-2021)</h3>
-        
-     
-        <h4>Introduction</h4>
-        <p>In the business world, companies face numerous challenges that directly impact their financial performance. <p>
-         <p>   For investors, understanding the factors that influence profitability is crucial in making informed investment decisions.<p>
-           <p> Key factors such as revenue, asset, employee count, and revenue percent change, market value play a significant role in determining <p>
-            <p>a company's financial success or failure, making them essential indicators for evaluating potential investments.</p>
-
-        <p>This analysis understanding empowers investors to make strategic, data-driven decisions that align with their goals.</p>
-
-  
-        <h4>Business Impact</h4>
-        <p>Exploring this data helps investors identify the most profitable companies, those with the highest market value, and the largest asset size, <p>
-          <p>  contributing to more informed and accurate investment decisions, thereby improving returns and reducing risks.</p>
-
-        
-        <h4>Tools Used</h4>
-        <ul>
-            <li><strong>Excel:</strong> Used for data cleaning, basic analysis, and organizing the dataset.</li>
-            <li><strong>Python:</strong> Utilized for advanced data analysis, statistical modeling, and creating predictive insights using libraries such as Pandas, NumPy, and Matplotlib.</li>
-            <li><strong>Tableau:</strong> Created interactive dashboards and visualizations to present the findings and make the data insights easily accessible to stakeholders.</li>
-        </ul>
- <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/ETUZirxAqgpKsFt0z8Fe5NgBp2n4u8yW5PQqfz1zNgMDhA?e=KmCl7g" target="_blank">Portfolio Page</a>
+            <h4>Tools Used</h4>
+            <ul>
+                <li><strong>Excel:</strong> Used for data cleaning and organizing the dataset.</li>
+                <li><strong>Python:</strong> Utilized for advanced data analysis and statistical modeling.</li>
+                <li><strong>Tableau:</strong> Created interactive dashboards and visualizations to present the findings.</li>
+            </ul>
+            <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/ETUZirxAqgpKsFt0z8Fe5NgBp2n4u8yW5PQqfz1zNgMDhA?e=KmCl7g" target="_blank">Portfolio Page</a>
             <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/FORTUN2018_2021/Dashboard1" target="_blank">Dashboard</a>
-            <a class="btn" href="https://colab.research.google.com/drive/1AUXg5LaCfQxTBXWMUiDI-gJ_R-ihpWZB="_blank">EDA Report</a>
-        <a class="btn" href="your-project-link" target="_blank">View Project</a>
-    </div>
-</section>
-
-    <section id="certificates">
-        <h2>My Certificates</h2>
-        <div class="slideshow-container">
-            <div class="mySlides fade"><img src="FOUNDATION.jpeg" alt="Foundation Certificate"></div>
-            <div class="mySlides fade"><img src="ANANLYZE.jpeg" alt="Analyze Certificate"></div>
-            <div class="mySlides fade"><img src="ASK.jpeg" alt="Ask Certificate"></div>
-            <div class="mySlides fade"><img src="PREPARE.jpeg" alt="Prepare Certificate"></div>
-            <div class="mySlides fade"><img src="google.jpeg" alt="Google Certificate"></div>
-            <div class="mySlides fade"><img src="process.jpeg" alt="Process Certificate"></div>
-            <div class="mySlides fade"><img src="share.jpeg" alt="Share Certificate"></div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="btn" href="https://colab.research.google.com/drive/1AUXg5LaCfQxTBXWMUiDI-gJ_R-ihpWZB" target="_blank">EDA Report</a>
         </div>
     </section>
-    
-<section id="contact-links" style="text-align: center; margin: 3rem 0;">
-    <h2 style="color: #2e7d5a;">📎 Quick Links</h2>
-    <p style="margin-bottom: 1.5rem;">Find me or explore my work across platforms:</p>
-
-    <div class="button-container">
-        <a class="custom-btn" href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">📊 LinkedIn Profile</a>
-        <a class="custom-btn" href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">📈 Tableau Dashboards</a>
-        <a class="custom-btn" href="mailto:afnanraabah1@gmail.com">📧 Email Me</a>
-        <a class="custom-btn" href="#projects">📂 My Projects</a>
-    </div>
-</section>
-
 
     <footer>
         <p>Contact me at: afnanraabah1@gmail.com</p>
