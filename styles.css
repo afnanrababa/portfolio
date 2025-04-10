@@ -1,4 +1,4 @@
-/* أساسيات الصفحة */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5fdf8;
@@ -7,13 +7,13 @@ body {
     padding: 0;
 }
 
-/* العناوين */
+
 h1, h2, h3, h4 {
     color: #2e7d5a;
     margin-bottom: 10px;
 }
 
-/* الهيدر */
+
 header {
     background-color: #dff5ec;
     text-align: center;
@@ -30,7 +30,7 @@ header p {
     color: #4b715d;
 }
 
-/* قسم التعريف */
+
 #about {
     padding: 2rem;
     background-color: #ffffff;
@@ -40,7 +40,7 @@ header p {
     line-height: 1.6;
 }
 
-/* المهارات */
+
 #skills {
     background-color: #f0fbf5;
     padding: 2rem;
@@ -64,7 +64,7 @@ header p {
     margin-top: 5px;
 }
 
-/* المشاريع */
+
 #projects {
     padding: 2rem;
     background-color: #ffffff;
@@ -88,7 +88,7 @@ header p {
     padding-left: 1.2rem;
 }
 
-/* الأزرار */
+
 a.btn {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
@@ -105,7 +105,7 @@ a.btn:hover {
     background-color: #4caf50;
 }
 
-/* الشهادات */
+
 #certificates {
     padding: 2rem;
     background-color: #f0fbf5;
@@ -146,7 +146,7 @@ a.btn:hover {
     left: 0;
 }
 
-/* الروابط الاجتماعية */
+
 section.links {
     background-color: #dff5ec;
     padding: 1.5rem;
@@ -164,7 +164,8 @@ section.links a:hover {
     color: #1b5e20;
 }
 
-/* الفوتر */
+
+
 footer {
     background-color: #c8e6c9;
     padding: 1rem;
