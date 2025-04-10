@@ -5,18 +5,17 @@ body {
     padding: 0;
     background-color: #ffffff; /* White background */
     color: #333333;
-    line-height: 1.6;
 }
 
 header {
-    background-color: #589d62; /* Light Green */
+    background-color: #6DBE45; /* Light Green */
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 25px 0;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
@@ -26,19 +25,19 @@ header p {
 }
 
 section {
-    padding: 50px 10%;
+    padding: 40px 10%;
 }
 
 h2 {
-    font-size: 32px;
-    color: #589d62; /* Light Green */
-    border-bottom: 2px solid #fbb0bb; /* Light Pink */
+    font-size: 28px;
+    color: #6DBE45; /* Light Green */
+    border-bottom: 2px solid #FFB0BB; /* Light Pink */
     padding-bottom: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 footer {
-    background-color: #589d62; /* Light Green */
+    background-color: #6DBE45; /* Light Green */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -47,56 +46,70 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
+/* Skills Section */
+#skills {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    color: #6DBE45; /* Light Green */
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Skill Bars */
+.sql {
+    background-color: #FFAD99;
+    width: 80%;
+}
+
+.python {
+    background-color: #FF9A7A;
+    width: 85%;
+}
+
+.excel {
+    background-color: #FFCCA4;
+    width: 90%;
+}
+
+.visualization {
+    background-color: #FFD1B3;
+    width: 75%;
+}
+
 /* About Section */
 #about {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-}
-
-#about p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* Projects Section */
-#projects {
-    background-color: #f1f1f1;
-    padding: 30px;
-    border-radius: 8px;
-}
-
-.project {
-    margin-bottom: 30px;
+    background-color: #ffffff;
+    color: #333;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #589d62; /* Light Green */
-}
-
-.project p {
-    font-size: 16px;
-    color: #555;
 }
 
 /* Slide Show for Certificates */
@@ -144,11 +157,11 @@ footer a:hover {
 /* Links Section */
 .links {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .links a {
-    color: #589d62; /* Light Green */
+    color: #6DBE45; /* Light Green */
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
