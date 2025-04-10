@@ -8,19 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
+        <div class="header-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Data Analyst Icon" class="header-icon">
+            <div class="header-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
+            </div>
+        </div>
     </header>
 
     <section id="about">
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
-            <img src="https://undraw.co/api/illustrations/data_trends.svg" alt="Data Analyst" style="max-width: 300px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="about-flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/9791/9791045.png" alt="About Me Image">
             <div>
-                <h2>About Me</h2>
                 <p>I'm a data enthusiast with over 6 years of hands-on experience collecting and managing data in fast-paced, high-impact environments.</p>
-                <p>From field operations to structured reports, I've worked closely with data where accuracy meant everything. That's where my passion for data analysis began — not just gathering information, but understanding it.</p>
+                <p>From field operations to structured reports, I've worked closely with data where accuracy meant everything. That’s where my passion for data analysis began — not just gathering information, but understanding it.</p>
                 <p>Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
-                <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey.</p>
+                <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact.</p>
             </div>
         </div>
     </section>
@@ -39,73 +43,65 @@
         <h2>My Projects</h2>
 
         <div class="project-card">
-            <h3>Assessment of Food Expenditure Among Syrian Refugees Households</h3>
-            
-            <h4>Introduction</h4>
-            <p>The Syrian crisis, which began in 2011, led to the displacement of approximately 5.5 million refugees...</p>
-            <p>Food is a fundamental pillar for every household...</p>
+            <h3>Assessment of Food Expenditure Among Syrian Refugee Households</h3>
+
+            <h4>Business Problem</h4>
+            <p>The Syrian crisis, which began in 2011, displaced over 5.5 million refugees, severely impacting their ability to meet basic food needs.</p>
+            <p>Factors like low income, large household size, and limited government aid affected food spending and health. This project analyzes the impact of these factors on household food spending in Kurdistan, Iraq, and Jordan.</p>
 
             <h4>Business Impact</h4>
-            <p>Uncovering these insights can drive meaningful action in several key areas:</p>
             <ul>
-                <li><strong>Supporting Host Countries:</strong> The data can assist host countries in identifying critical needs...</li>
-                <li><strong>Helping Organizations Tackle Food Insecurity:</strong> Relevant organizations can leverage this data...</li>
+                <li><strong>Host Country Support:</strong> Guide food assistance programs for vulnerable households.</li>
+                <li><strong>Organizational Planning:</strong> Help organizations design effective training and job programs.</li>
             </ul>
 
             <h4>Tools Used</h4>
             <ul>
-                <li><strong>Excel:</strong> Used for data cleaning, basic analysis, and organizing the dataset.</li>
-                <li><strong>Python:</strong> Utilized for data analysis using Pandas, NumPy, and Matplotlib.</li>
-                <li><strong>Tableau:</strong> Created interactive dashboards and visualizations to present the findings.</li>
+                <li><strong>Excel:</strong> Data cleaning & organization.</li>
+                <li><strong>Python:</strong> Analysis using Pandas, NumPy, and Matplotlib.</li>
+                <li><strong>Tableau:</strong> Dashboard for insights.</li>
             </ul>
 
-            <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/EZCCdkKxIF1BrQIY6J_3mdkB5rV1_IQeN-ZJIS6X1ZnOHg?e=GFSzV3&nav=eyJzSWQiOjI1NiwiY0lkIjowfQ" target="_blank">View Project</a>
+            <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/EZCCdkKxIF1BrQIY6J_3mdkB5rV1_IQeN-ZJIS6X1ZnOHg?e=GFSzV3" target="_blank">View Project</a>
             <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/REFUGEES_17384413279340/Story1" target="_blank">Dashboard</a>
-            <a class="btn" href="https://colab.research.google.com/drive/1HyiBYz45JkEe5As2d9sixfUoPEbSsKDh?usp=sharing">EDA Report</a>
+            <a class="btn" href="https://colab.research.google.com/drive/1HyiBYz45JkEe5As2d9sixfUoPEbSsKDh?usp=sharing" target="_blank">EDA Report</a>
         </div>
-    </section>
 
-    <section id="certificates">
-        <h2>My Certificates</h2>
-        <div class="slideshow-container">
-            <div class="mySlides fade"><img src="https://via.placeholder.com/600x400?text=Certificate+1" alt="Foundation Certificate"></div>
-            <div class="mySlides fade"><img src="https://via.placeholder.com/600x400?text=Certificate+2" alt="Analyze Certificate"></div>
-            <div class="mySlides fade"><img src="https://via.placeholder.com/600x400?text=Certificate+3" alt="Ask Certificate"></div>
+        <div class="project-card">
+            <h3>Company Performance Analysis: Key Data for Investors (2018-2021)</h3>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <h4>Business Problem</h4>
+            <p>Investors need to understand profitability influencers like revenue, market value, and employee count to make informed decisions.</p>
+            <p>This project helps assess these financial indicators over time to spot top-performing companies.</p>
+
+            <h4>Business Impact</h4>
+            <ul>
+                <li><strong>Investor Clarity:</strong> Pinpoint companies with consistent growth and high returns.</li>
+                <li><strong>Strategic Decisions:</strong> Guide investment strategies with meaningful, data-backed insights.</li>
+            </ul>
+
+            <h4>Tools Used</h4>
+            <ul>
+                <li><strong>Excel:</strong> Initial data cleaning and basic summary.</li>
+                <li><strong>Python:</strong> Trend and financial analysis.</li>
+                <li><strong>Tableau:</strong> Dashboard for stakeholder engagement.</li>
+            </ul>
+
+            <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/ETUZirxAqgpKsFt0z8Fe5NgBp2n4u8yW5PQqfz1zNgMDhA?e=KmCl7g" target="_blank">Portfolio Page</a>
+            <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/FORTUN2018_2021/Dashboard1" target="_blank">Dashboard</a>
+            <a class="btn" href="https://colab.research.google.com/drive/1AUXg5LaCfQxTBXWMUiDI-gJ_R-ihpWZB?usp=sharing" target="_blank">EDA Report</a>
         </div>
     </section>
 
     <section class="links">
-        <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
-        <a href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau</a>
+        <a class="btn" href="mailto:afnanraabah1@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau Profile</a>
     </section>
 
     <footer>
-        <p>Contact me at: afnanraabah1@gmail.com</p>
         <p><strong>Location:</strong> Jordan</p>
     </footer>
-
-    <script>
-        let slideIndex = 0;
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000);
-        }
-        showSlides();
-
-        function plusSlides(n) {
-            slideIndex += n - 1;
-            showSlides();
-        }
-    </script>
 </body>
 </html>
 
