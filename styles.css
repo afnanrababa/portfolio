@@ -1,141 +1,85 @@
-/* ========== الأساسيات ========== */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom right, #f5fbf7, #e0f2f1);
-    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fdf9;
     margin: 0;
     padding: 0;
+    color: #2c2c2c;
 }
 
-/* ========== الهيدر (Header) ========== */
 header {
-    background: linear-gradient(135deg, #f2f7f5, #a5d6a7);
-    padding: 4rem 1rem;
+    background-color: #d2f4e2;
+    padding: 30px;
     text-align: center;
-    border-bottom: 2px solid #ddd;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #388e3c;
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #555;
+.header-icon {
+    width: 80px;
+    margin-bottom: 15px;
 }
 
-/* ========== التنسيق العام للمحتوى ========== */
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #1d5c44;
+}
+
 section {
-    padding: 3rem 2rem;
-    max-width: 1100px;
+    padding: 30px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 
-h2, h3 {
-    color: #388e3c;
+.about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
 }
 
-p {
-    line-height: 1.6;
-    margin-bottom: 20px;
+.about-flex img {
+    max-width: 300px;
+    border-radius: 12px;
 }
 
-/* ========== التفاعل مع الأزرار ========== */
-.btn {
-    background-color: #388e3c;
-    color: #fff;
-    padding: 0.8rem 1.6rem;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #66bb6a;
-    transform: scale(1.05);
-}
-
-/* ========== التنسيق للأقسام والمهارات ========== */
 .skills-container {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 10px;
 }
 
 .skill-bar {
-    height: 15px;
-    background-color: #c8e6c9;
-    border-radius: 8px;
-    position: relative;
+    height: 10px;
+    background-color: #6dbf7c;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-.skill-bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #4caf50;
-    border-radius: 8px;
-}
-
-/* ========== تصميم الـ كروت للمشاريع ========== */
 .project-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    margin: 2rem 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border: 1px solid #cce9dc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
-    color: #388e3c;
-    margin-bottom: 10px;
+    color: #1e4d3a;
+}
+
+.project-card h4 {
+    margin-top: 15px;
+    color: #468b65;
 }
 
 .project-card p {
-    color: #555;
-}
+   
 
-.project-card a {
-    margin-top: 15px;
-    display: inline-block;
-}
-
-/* ========== التفاعل مع السلايد للـ شهادات ========== */
-.slideshow-container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.mySlides {
-    display: none;
-    position: absolute;
-    width: 100%;
-    transition: all 1s ease-in-out;
-}
-
-.mySlides img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* ========== السلايدر / الانتقال بين الصور ========== */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: #
 
 
