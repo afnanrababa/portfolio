@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Afnan Rababa</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afnan Rabab | Data Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9fdfb;
+      color: #2e2e2e;
+    }
+    header {
+      background-color: #A8D5BA;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project, .certificate {
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background-color: #ffffff;
+    }
+    h2 {
+      color: #3a665a;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+    .slider img {
+      height: 150px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #A8D5BA;
+      text-align: center;
+      padding: 1rem;
+    }
+    a {
+      color: #3a665a;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm Afnan Rababa | Passionate Data Analyst | Problem Solver</p>
-    </header>
+  <header>
+    <h1>Afnan Rabab</h1>
+    <p>Turning Data Into Insightful Stories</p>
+  </header>
 
-    <section id="about">
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
-            <img src="https://undraw.co/api/illustrations/data_trends.svg" alt="Data Analyst" style="max-width: 300px; border-radius: 10px;">
-            <div>
-                <p>I'm a data enthusiast with over 6 years of experience collecting and managing data in fast-paced, high-impact environments.</p>
-                <p>From field operations to structured reports, I’ve worked closely with data where accuracy means everything.</p>
-                <p>Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights.</p>
-                <p>My goal? To turn raw data into powerful stories that drive decisions and create real-world impact.</p>
-                <p>This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
-            </div>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a data enthusiast with over 6 years of experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I’ve worked closely with data where accuracy means everything.</p>
+    <p>Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights. My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
+  </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill"><h3>SQL</h3><div class="skill-bar" style="width: 90%"></div></div>
-            <div class="skill"><h3>Python</h3><div class="skill-bar" style="width: 85%"></div></div>
-            <div class="skill"><h3>Excel</h3><div class="skill-bar" style="width: 80%"></div></div>
-            <div class="skill"><h3>Data Visualization</h3><div class="skill-bar" style="width: 75%"></div></div>
-        </div>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Excel</li>
+      <li>SQL</li>
+      <li>Python (Pandas, Matplotlib)</li>
+      <li>Tableau</li>
+      <li>Data Cleaning & EDA</li>
+      <li>Dashboarding</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Assessment of Food Expenditure Among Syrian Refugees Households</h3>
-            <h4>Introduction</h4>
-            <p>The Syrian crisis, which began in 2011, led to the displacement of millions of refugees, severely affecting their ability to meet their food needs. This project analyzes the factors influencing food expenditure patterns among refugee households in Kurdistan, Iraq, and Jordan.</p>
-            <h4>Business Impact</h4>
-            <p>Uncovering these insights can help improve food assistance, target vulnerable households, and support job creation for refugees to reduce food insecurity.</p>
-            <h4>Tools Used</h4>
-            <ul>
-                <li><strong>Excel:</strong> For data cleaning and basic analysis.</li>
-                <li><strong>Python:</strong> For in-depth data analysis with libraries like Pandas, NumPy, and Matplotlib.</li>
-                <li><strong>Tableau:</strong> For visualizing data and creating interactive dashboards.</li>
-            </ul>
-            <div class="project-links">
-                <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/EZCCdkKxIF1BrQIY6J_3mdkB5rV1_IQeN-ZJIS6X1ZnOHg?e=GFSzV3&nav=eyJzSWQiOjI1NiwiY0lkIjowfQ" target="_blank">View Project</a>
-                <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/REFUGEES_17384413279340/Story1" target="_blank">Dashboard</a>
-                <a class="btn" href="https://colab.research.google.com/drive/1HyiBYz45JkEe5As2d9sixfUoPEbSsKDh?usp=sharing">EDA Report</a>
-            </div>
-        </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Assessment of Food Expenditure Among Syrian Refugees Households (Jan 2025)</h3>
+      <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+      <ul>
+        <li>Analyzed food expenditure patterns among refugee households</li>
+        <li>Data curation and EDA using Python</li>
+        <li>Identified at-risk households</li>
+        <li>Created interactive Tableau dashboards</li>
+      </ul>
+      <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
+    </div>
 
-        <div class="project-card">
-            <h3>Company Performance Analysis for Investors (2018-2021)</h3>
-            <h4>Introduction</h4>
-            <p>Understanding the factors that influence profitability is crucial for making informed investment decisions. This project analyzes key metrics such as revenue, profit, market value, and employee count from 2018 to 2021.</p>
-            <h4>Business Impact</h4>
-            <p>This analysis empowers investors to make strategic, data-driven decisions, identifying companies with strong growth potential, thus improving returns and reducing investment risks.</p>
-            <h4>Tools Used</h4>
-            <ul>
-                <li><strong>Excel:</strong> For data cleaning and organizing datasets.</li>
-                <li><strong>Python:</strong> For advanced analysis, statistical modeling, and creating predictive insights.</li>
-                <li><strong>Tableau:</strong> For presenting findings in visual and interactive formats.</li>
-            </ul>
-            <div class="project-links">
-                <a class="btn" href="https://1drv.ms/p/c/3333ce4ae598382a/ETUZirxAqgpKsFt0z8Fe5NgBp2n4u8yW5PQqfz1zNgMDhA?e=KmCl7g" target="_blank">Portfolio Page</a>
-                <a class="btn" href="https://public.tableau.com/app/profile/afnan7332/viz/FORTUN2018_2021/Dashboard1" target="_blank">Dashboard</a>
-                <a class="btn" href="https://colab.research.google.com/drive/1AUXg5LaCfQxTBXWMUiDI-gJ_R-ihpWZB" target="_blank">EDA Report</a>
-            </div>
-        </div>
-    </section>
+    <div class="project">
+      <h3>Company Performance Analysis for Investors (2018–2021)</h3>
+      <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+      <ul>
+        <li>Analyzed company performance data</li>
+        <li>Provided investment recommendations</li>
+        <li>Focused on metrics like revenue and market value</li>
+      </ul>
+      <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
+    </div>
+  </section>
 
-    <section id="certificates">
-        <h2>My Certificates</h2>
-        <div class="slideshow-container">
-            <div class="mySlides fade"><img src="FOUNDATION.jpeg" alt="Foundation Certificate"></div>
-            <div class="mySlides fade"><img src="ANANLYZE.jpeg" alt="Analyze Certificate"></div>
-            <div class="mySlides fade"><img src="ASK.jpeg" alt="Ask Certificate"></div>
-            <div class="mySlides fade"><img src="PREPARE.jpeg" alt="Prepare Certificate"></div>
-            <div class="mySlides fade"><img src="google.jpeg" alt="Google Certificate"></div>
-            <div class="mySlides fade"><img src="process.jpeg" alt="Process Certificate"></div>
-            <div class="mySlides fade"><img src="share.jpeg" alt="Share Certificate"></div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    </section>
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="slider">
+      <!-- Replace with actual certificate images -->
+      <img src="cert1.jpg" alt="Certificate 1">
+      <img src="cert2.jpg" alt="Certificate 2">
+    </div>
+  </section>
 
-    <section class="links">
-        <a href="https://www.linkedin.com/in/afnan-rababa/" target="_blank">LinkedIn</a>
-        <a href="https://public.tableau.com/app/profile/afnan7332/vizzes" target="_blank">Tableau</a>
-    </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:afnanrababah1@gmail.com">afnanrababah1@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/afnan-rababa/">afnan-rababa</a></p>
+    <p>GitHub: <a href="#">(Add GitHub link here)</a></p>
+  </section>
 
-    <footer>
-        <p>Contact me at: afnanraabah1@gmail.com</p>
-        <p><strong>Location:</strong> Jordan</p>
-    </footer>
-
-    <script>
-        let slideIndex = 0;
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000);
-        }
-        showSlides();
-
-        function plusSlides(n) {
-            slideIndex += n - 1;
-            showSlides();
-        }
-    </script>
+  <footer>
+    &copy; 2025 Afnan Rabab
+  </footer>
 </body>
 </html>
-
-
 
 
