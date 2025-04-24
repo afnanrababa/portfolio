@@ -9,109 +9,55 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f5fdf9;
-      color: #2d3436;
+      background-color: #f9fdfb;
+      color: #2e2e2e;
     }
-
     header {
-      background-color: #43aa8b;
-      color: white;
-      padding: 3rem 2rem;
+      background-color: #1B5E20;
+      padding: 2rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
     section {
       padding: 2rem;
-      max-width: 950px;
+      max-width: 900px;
       margin: auto;
     }
-
-    h2 {
-      color: #2f5f4a;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      border-left: 4px solid #43aa8b;
-      padding-left: 0.7rem;
-    }
-
     .project, .certificate {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 1.5rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      padding: 1rem;
       margin-bottom: 1.5rem;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease-in-out;
+      background-color: #ffffff;
     }
-
-    .project:hover, .certificate:hover {
-      transform: scale(1.01);
+    h2 {
+      color: #3a665a;
     }
-
-    /* إضافة التمرير الأفقي للمشاريع */
-    .projects-slider, .certificates-slider {
+    .slider {
       display: flex;
       overflow-x: auto;
-      gap: 1.5rem;
-      padding-bottom: 1rem;
-      scrollbar-width: thin;
+      gap: 1rem;
     }
-
-    .projects-slider::-webkit-scrollbar, .certificates-slider::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    .projects-slider::-webkit-scrollbar-thumb, .certificates-slider::-webkit-scrollbar-thumb {
-      background-color: #43aa8b;
+    .slider img {
+      height: 150px;
       border-radius: 10px;
+      object-fit: cover;
     }
-
-    .projects-slider img, .certificates-slider img {
-      height: 200px;
-      border-radius: 10px;
-      max-width: 100%;
-    }
-
     footer {
-      background-color: #43aa8b;
+      background-color: #1B5E20;
       text-align: center;
       padding: 1rem;
-      color: white;
-      font-size: 0.9rem;
     }
-
     a {
-      color: #43aa8b;
-      text-decoration: none;
+      color: #3a665a;
     }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-      line-height: 1.8;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      section {
-        padding: 1.5rem;
-      }
+    .about-img {
+      width: 150px; 
+      border-radius: 50%;
+      margin: 1rem 0;
     }
   </style>
 </head>
@@ -123,6 +69,7 @@
 
   <section id="about">
     <h2>About Me</h2>
+    <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/istockphoto-1480239219-2048x2048.jpg" alt="Afnan Rabab" class="about-img"/>
     <p>I'm a data enthusiast with over 6 years of experience collecting and managing data in fast-paced, high-impact environments. From field operations to structured reports, I’ve worked closely with data where accuracy means everything.</p>
     <p>Today, I use tools like SQL, Python, and Excel to explore, clean, and visualize data in ways that reveal clear, actionable insights. My goal? To turn raw data into powerful stories that drive decisions and create real-world impact. This portfolio is a reflection of that journey — and the skills I’m building to take it even further.</p>
   </section>
@@ -141,40 +88,40 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects-slider">
-      <div class="project">
-        <h3>Assessment of Food Expenditure Among Syrian Refugees Households (Jan 2025)</h3>
-        <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
-        <ul>
-          <li>Analyzed food expenditure patterns among refugee households</li>
-          <li>Data curation and EDA using Python</li>
-          <li>Identified at-risk households</li>
-          <li>Created interactive Tableau dashboards</li>
-        </ul>
-        <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
-      </div>
+    <div class="project">
+      <h3>Assessment of Food Expenditure Among Syrian Refugees Households (Jan 2025)</h3>
+      <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+      <ul>
+        <li>Analyzed food expenditure patterns among refugee households</li>
+        <li>Data curation and EDA using Python</li>
+        <li>Identified at-risk households</li>
+        <li>Created interactive Tableau dashboards</li>
+      </ul>
+      <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
+    </div>
 
-      <div class="project">
-        <h3>Company Performance Analysis for Investors (2018–2021)</h3>
-        <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
-        <ul>
-          <li>Analyzed company performance data</li>
-          <li>Provided investment recommendations</li>
-          <li>Focused on metrics like revenue and market value</li>
-        </ul>
-        <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
-      </div>
-
-      <!-- يمكن إضافة المزيد من المشاريع هنا -->
+    <div class="project">
+      <h3>Company Performance Analysis for Investors (2018–2021)</h3>
+      <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+      <ul>
+        <li>Analyzed company performance data</li>
+        <li>Provided investment recommendations</li>
+        <li>Focused on metrics like revenue and market value</li>
+      </ul>
+      <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
     </div>
   </section>
 
   <section id="certificates">
     <h2>Certificates</h2>
-    <div class="certificates-slider">
-      <img src="cert1.jpg" alt="Certificate 1">
-      <img src="cert2.jpg" alt="Certificate 2">
-      <!-- يمكن إضافة المزيد من الشهادات هنا -->
+    <div class="slider">
+      <!-- Add certificate images -->
+      <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/ANANLYZE.jpeg" alt="ANANLYZE Certificate">
+      <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/ASK.jpeg" alt="ASK Certificate">
+      <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/FOUNDATION.jpeg" alt="FOUNDATION Certificate">
+      <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/PREPARE.jpeg" alt="PREPARE Certificate">
+      <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/google.jpegprocess.jpeg" alt="Google Process Certificate">
+      <img src="https://raw.githubusercontent.com/username/repository/branch/path/to/share.jpeg" alt="Share Certificate">
     </div>
   </section>
 
@@ -190,6 +137,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
