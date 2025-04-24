@@ -54,21 +54,32 @@
       transition: transform 0.2s ease-in-out;
     }
 
-    .project:hover {
+    .project:hover, .certificate:hover {
       transform: scale(1.01);
     }
 
-    .slider {
+    /* إضافة التمرير الأفقي للمشاريع */
+    .projects-slider, .certificates-slider {
       display: flex;
       overflow-x: auto;
-      gap: 1rem;
+      gap: 1.5rem;
       padding-bottom: 1rem;
+      scrollbar-width: thin;
     }
 
-    .slider img {
-      height: 160px;
+    .projects-slider::-webkit-scrollbar, .certificates-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .projects-slider::-webkit-scrollbar-thumb, .certificates-slider::-webkit-scrollbar-thumb {
+      background-color: #43aa8b;
       border-radius: 10px;
-      border: 1px solid #e0e0e0;
+    }
+
+    .projects-slider img, .certificates-slider img {
+      height: 200px;
+      border-radius: 10px;
+      max-width: 100%;
     }
 
     footer {
@@ -130,46 +141,40 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Assessment of Food Expenditure Among Syrian Refugees Households (Jan 2025)</h3>
-      <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
-      <ul>
-        <li>Analyzed food expenditure patterns among refugee households</li>
-        <li>Data curation and EDA using Python</li>
-        <li>Identified at-risk households</li>
-        <li>Created interactive Tableau dashboards</li>
-      </ul>
-      <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
-
-      <!-- إضافة صورة تحليل البيانات -->
-      <div style="text-align: center;">
-        <img src="your-image-path.jpg" alt="Data Analysis" style="max-width: 100%; border-radius: 10px;">
+    <div class="projects-slider">
+      <div class="project">
+        <h3>Assessment of Food Expenditure Among Syrian Refugees Households (Jan 2025)</h3>
+        <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+        <ul>
+          <li>Analyzed food expenditure patterns among refugee households</li>
+          <li>Data curation and EDA using Python</li>
+          <li>Identified at-risk households</li>
+          <li>Created interactive Tableau dashboards</li>
+        </ul>
+        <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
       </div>
-    </div>
 
-    <div class="project">
-      <h3>Company Performance Analysis for Investors (2018–2021)</h3>
-      <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
-      <ul>
-        <li>Analyzed company performance data</li>
-        <li>Provided investment recommendations</li>
-        <li>Focused on metrics like revenue and market value</li>
-      </ul>
-      <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
-
-      <!-- إضافة صورة تحليل البيانات -->
-      <div style="text-align: center;">
-        <img src="your-image-path.jpg" alt="Data Analysis" style="max-width: 100%; border-radius: 10px;">
+      <div class="project">
+        <h3>Company Performance Analysis for Investors (2018–2021)</h3>
+        <p><strong>Tools Used:</strong> Excel, Python, Tableau</p>
+        <ul>
+          <li>Analyzed company performance data</li>
+          <li>Provided investment recommendations</li>
+          <li>Focused on metrics like revenue and market value</li>
+        </ul>
+        <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
       </div>
+
+      <!-- يمكن إضافة المزيد من المشاريع هنا -->
     </div>
   </section>
 
   <section id="certificates">
     <h2>Certificates</h2>
-    <div class="slider">
-      <!-- Replace with actual certificate images -->
+    <div class="certificates-slider">
       <img src="cert1.jpg" alt="Certificate 1">
       <img src="cert2.jpg" alt="Certificate 2">
+      <!-- يمكن إضافة المزيد من الشهادات هنا -->
     </div>
   </section>
 
