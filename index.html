@@ -9,49 +9,98 @@
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f9fdfb;
-      color: #2e2e2e;
+      background-color: #f5fdf9;
+      color: #2d3436;
     }
+
     header {
-      background-color: #A8D5BA;
-      padding: 2rem;
+      background-color: #43aa8b;
+      color: white;
+      padding: 3rem 2rem;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
     section {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
     }
-    .project, .certificate {
-      border: 1px solid #dcdcdc;
-      border-radius: 10px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      background-color: #ffffff;
-    }
+
     h2 {
-      color: #3a665a;
+      color: #2f5f4a;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #43aa8b;
+      padding-left: 0.7rem;
     }
+
+    .project, .certificate {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .project:hover {
+      transform: scale(1.01);
+    }
+
     .slider {
       display: flex;
       overflow-x: auto;
       gap: 1rem;
+      padding-bottom: 1rem;
     }
+
     .slider img {
-      height: 150px;
+      height: 160px;
       border-radius: 10px;
+      border: 1px solid #e0e0e0;
     }
+
     footer {
-      background-color: #A8D5BA;
+      background-color: #43aa8b;
       text-align: center;
       padding: 1rem;
+      color: white;
+      font-size: 0.9rem;
     }
+
     a {
-      color: #3a665a;
+      color: #43aa8b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -91,6 +140,11 @@
         <li>Created interactive Tableau dashboards</li>
       </ul>
       <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
+
+      <!-- إضافة صورة تحليل البيانات -->
+      <div style="text-align: center;">
+        <img src="your-image-path.jpg" alt="Data Analysis" style="max-width: 100%; border-radius: 10px;">
+      </div>
     </div>
 
     <div class="project">
@@ -102,6 +156,11 @@
         <li>Focused on metrics like revenue and market value</li>
       </ul>
       <p><a href="https://public.tableau.com/app/profile/afnan7332/vizzes">View Tableau Dashboard</a></p>
+
+      <!-- إضافة صورة تحليل البيانات -->
+      <div style="text-align: center;">
+        <img src="your-image-path.jpg" alt="Data Analysis" style="max-width: 100%; border-radius: 10px;">
+      </div>
     </div>
   </section>
 
@@ -126,5 +185,6 @@
   </footer>
 </body>
 </html>
+
 
 
